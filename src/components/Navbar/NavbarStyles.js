@@ -41,7 +41,7 @@ export const NavLinksContainerStyled = styled.div`
     }
 
     a:hover {
-        text-decoration: underline #f7cac9;
+        color: #f7cac9;
     }
 `;
 
