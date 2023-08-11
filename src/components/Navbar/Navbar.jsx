@@ -1,10 +1,11 @@
 import React from 'react'
-import { AlbumsContainerStyled, HomeContainerStyled, LinkContainerStyled, MenuContainerStyled, NavLinksContainerStyled, NavbarContainerStyled, UserContainerStyled } from './NavbarStyles'
+import { AlbumsContainerStyled, ContactContainerStyled, HomeContainerStyled, LinkContainerStyled, MenuContainerStyled, NavLinksContainerStyled, NavbarContainerStyled, UserContainerStyled } from './NavbarStyles'
 
 import {motion} from "framer-motion"
 
 import {AiFillHome} from "react-icons/ai"
 import {BiSolidAlbum} from "react-icons/bi"
+import {BsEnvelopeFill} from "react-icons/bs"
 import {FaUser} from "react-icons/fa"
 import {SlMenu} from "react-icons/sl"
 
@@ -39,13 +40,24 @@ const Navbar = () => {
               </motion.div>
             </AlbumsContainerStyled> 
 
+            <ContactContainerStyled>
+              <motion.div whileTap={{scale: 0.90}}>
+                <a href="/#">
+                  <LinkContainerStyled icons>
+                    <BsEnvelopeFill/>
+                  </LinkContainerStyled>
+                  CONTACTO 
+                </a>
+              </motion.div>
+            </ContactContainerStyled>
+
             <UserContainerStyled>
               <motion.div whileTap={{scale: 0.90}}>
                 <a href="/#">
                   <LinkContainerStyled icons>
                     <FaUser/>
                   </LinkContainerStyled>
-                  INICIAR SESIÓN
+                  USUARIO
                 </a>
               </motion.div>
             </UserContainerStyled>  

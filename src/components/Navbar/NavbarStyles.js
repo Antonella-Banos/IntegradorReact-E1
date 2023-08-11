@@ -17,6 +17,12 @@ export const NavbarContainerStyled = styled.header`
     @media (max-width: 576px) {
         padding: 1rem 2rem;
     }
+
+    @media (max-width: 320px) {
+        img {
+            height: 75px;
+        }
+    }
 `;
 
 export const NavLinksContainerStyled = styled.div`
@@ -24,7 +30,7 @@ export const NavLinksContainerStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 15px;
 
     a {
         padding: 0.5rem;
@@ -51,6 +57,12 @@ export const LinkContainerStyled = styled.div`
 
 
 export const UserContainerStyled = styled(LinkContainerStyled)`
+    @media (max-width: 768px) {
+		display: none;
+	}
+
+`;
+export const ContactContainerStyled = styled(LinkContainerStyled)`
     @media (max-width: 768px) {
 		display: none;
 	}
