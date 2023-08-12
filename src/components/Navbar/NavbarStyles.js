@@ -7,7 +7,7 @@ export const NavbarWrapper = styled.header`
 `;
 
 export const NavbarContainerStyled = styled.nav`
-    height: 90px;
+    height: 80px;
     background-color: #7ca1d5;
     display: flex;
     justify-content: space-between;
