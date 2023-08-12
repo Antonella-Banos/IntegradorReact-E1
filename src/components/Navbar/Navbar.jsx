@@ -1,17 +1,18 @@
 import React from 'react'
-import { AlbumsContainerStyled, ContactContainerStyled, HomeContainerStyled, LinkContainerStyled, MenuContainerStyled, NavLinksContainerStyled, NavbarContainerStyled, UserContainerStyled } from './NavbarStyles'
+import { AboutContainerStyled, AlbumsContainerStyled, CartContainer, ContactContainerStyled, HomeContainerStyled, LinkContainerStyled, 
+MenuContainerStyled, NavLinksContainerStyled, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
 
 import {motion} from "framer-motion"
 
-import {AiFillHome} from "react-icons/ai"
-import {BiSolidAlbum} from "react-icons/bi"
-import {BsEnvelopeFill} from "react-icons/bs"
+
 import {FaUser} from "react-icons/fa"
+import {FaShoppingCart} from "react-icons/fa"
 import {SlMenu} from "react-icons/sl"
 
 const Navbar = () => {
   return (
-    <NavbarContainerStyled>
+    <NavbarWrapper>
+      <NavbarContainerStyled>
         <div>
             <a href="/#"> 
                <img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/15/assets/17/images/ofs_menu.png" alt="Logo" /> 
@@ -21,10 +22,9 @@ const Navbar = () => {
             <HomeContainerStyled>
               <motion.div whileTap={{scale: 0.90}}> 
                 <a href="/#">
-                   <LinkContainerStyled icons> 
-                      <AiFillHome/>
+                   <LinkContainerStyled> 
+                      HOME
                    </LinkContainerStyled>
-                   HOME
                 </a>
               </motion.div> 
             </HomeContainerStyled>
@@ -32,43 +32,57 @@ const Navbar = () => {
             <AlbumsContainerStyled>
               <motion.div whileTap={{scale: 0.90}}>
                 <a href="/#">
-                  <LinkContainerStyled icons> 
-                    <BiSolidAlbum/>
+                  <LinkContainerStyled> 
+                    ÁLBUMES
                   </LinkContainerStyled>
-                  ÁLBUMES
                 </a>
               </motion.div>
             </AlbumsContainerStyled> 
+
+            <AboutContainerStyled>
+              <motion.div whileTap={{scale: 0.90}}>
+                <a href="/#">
+                  <LinkContainerStyled>
+                    STORE
+                  </LinkContainerStyled>
+                </a>
+              </motion.div>
+            </AboutContainerStyled>
 
             <ContactContainerStyled>
               <motion.div whileTap={{scale: 0.90}}>
                 <a href="/#">
                   <LinkContainerStyled icons>
-                    <BsEnvelopeFill/>
+                    CONTACTO
                   </LinkContainerStyled>
-                  CONTACTO 
                 </a>
               </motion.div>
             </ContactContainerStyled>
 
-            <UserContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}>
-                <a href="/#">
-                  <LinkContainerStyled icons>
-                    <FaUser/>
-                  </LinkContainerStyled>
-                  USUARIO
-                </a>
-              </motion.div>
-            </UserContainerStyled>  
-
             <motion.div whileTap={{scale: 0.90}}>
-              <MenuContainerStyled icons>
+              <MenuContainerStyled icon>
                 <SlMenu/>
               </MenuContainerStyled>
-            </motion.div>         
+            </motion.div>    
+
+
+            <UserYCartContainer>
+              <motion.div whileTap={{scale: 0.90}}>
+                <UserContainer icon>
+                 <FaUser/>
+                </UserContainer>
+              </motion.div>
+
+              <motion.div whileTap={{scale: 0.90}}>
+                <CartContainer icon>
+                  <FaShoppingCart/> 
+                </CartContainer>
+              </motion.div>
+            </UserYCartContainer>
+
         </NavLinksContainerStyled>
     </NavbarContainerStyled>
+    </NavbarWrapper>
   )
 }
 

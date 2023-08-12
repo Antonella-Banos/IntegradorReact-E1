@@ -5,7 +5,7 @@ export const HeroContainerStyled = styled.section`
 	justify-content: space-around;
 	align-items: center;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin-top: 7rem;
 	gap: 30px;
 	h1 {
 		margin-bottom: 2rem;
