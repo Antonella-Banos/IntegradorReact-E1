@@ -1,6 +1,6 @@
 import React from 'react'
 import { AboutContainerStyled, AlbumsContainerStyled, CartContainer, ContactContainerStyled, HomeContainerStyled, LinkContainerStyled, 
-MenuContainerStyled, NavLinksContainerStyled, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
+MenuContainerStyled, NavItemsContainerStyled, NavLinksWrapper, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
 
 import {motion} from "framer-motion"
 
@@ -18,8 +18,10 @@ const Navbar = () => {
                <img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/15/assets/17/images/ofs_menu.png" alt="Logo" /> 
             </a> 
         </div>
-        <NavLinksContainerStyled>
-            <HomeContainerStyled>
+        <NavItemsContainerStyled>
+
+             <NavLinksWrapper>
+             <HomeContainerStyled>
               <motion.div whileTap={{scale: 0.90}}> 
                 <a href="/#">
                    <LinkContainerStyled> 
@@ -58,6 +60,7 @@ const Navbar = () => {
                 </a>
               </motion.div>
             </ContactContainerStyled>
+             </NavLinksWrapper>
 
             <motion.div whileTap={{scale: 0.90}}>
               <MenuContainerStyled icon>
@@ -80,7 +83,8 @@ const Navbar = () => {
               </motion.div>
             </UserYCartContainer>
 
-        </NavLinksContainerStyled>
+        </NavItemsContainerStyled>
+
     </NavbarContainerStyled>
     </NavbarWrapper>
   )

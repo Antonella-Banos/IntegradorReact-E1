@@ -32,7 +32,7 @@ export const NavbarContainerStyled = styled.nav`
     }
 `;
 
-export const NavLinksContainerStyled = styled.div`
+export const NavItemsContainerStyled = styled.div`
     color: #fff;
     display: flex;
     justify-content: center;
@@ -53,6 +53,27 @@ export const NavLinksContainerStyled = styled.div`
 
     @media (max-width: 768px) {
         gap: 10px;
+    }
+`;
+
+export const NavLinksWrapper = styled.div`
+    display: flex;
+    gap: 20px;
+    
+    @media (max-width: 768px) {
+
+        .open-menu {
+            position: absolute;
+            z-index: 2;
+            top: 80px;
+            right: 5%;
+            width: 70%;
+            flex-direction: column;
+            background-color: #7ca1d5;
+            align-items: center;
+            padding: 20px;
+            gap: 25px;
+        }
     }
 `;
 
