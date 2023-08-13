@@ -54,7 +54,7 @@ const Navbar = () => {
             <ContactContainerStyled>
               <motion.div whileTap={{scale: 0.90}}>
                 <a href="/#">
-                  <LinkContainerStyled icons>
+                  <LinkContainerStyled>
                     CONTACTO
                   </LinkContainerStyled>
                 </a>
