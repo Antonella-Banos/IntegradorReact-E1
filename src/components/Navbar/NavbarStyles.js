@@ -58,69 +58,33 @@ export const NavItemsContainerStyled = styled.div`
 
 export const NavLinksWrapper = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 25px;
     
     @media (max-width: 768px) {
 
-        .open-menu {
+        &.open {
             position: absolute;
             z-index: 2;
             top: 80px;
-            right: 5%;
-            width: 70%;
+            right: 14%;
+            width: 40%;
             flex-direction: column;
             background-color: #7ca1d5;
             align-items: center;
             padding: 20px;
-            gap: 25px;
+            gap: 30px;
         }
     }
 `;
 
-export const LinkContainerStyled = styled.div`
-    font-size: 20px;
-    font-family: 'Pathway Gothic One', sans-serif;
-    display: flex;
-    align-items: center;
-    letter-spacing: 2px;
-    cursor: pointer;
-`;
-
-export const ContactContainerStyled = styled(LinkContainerStyled)`
-    @media (max-width: 768px) {
-		display: none;
-	}
-
-`;
-
-export const AboutContainerStyled = styled(LinkContainerStyled)`
-    @media (max-width: 768px) {
-		display: none;
-	}
-
-`;
-
-export const AlbumsContainerStyled = styled(LinkContainerStyled)`
-    @media (max-width: 768px) {
-		display: none;
-	}
-
-`;
-
-export const HomeContainerStyled = styled(LinkContainerStyled)`
-    @media (max-width: 768px) {
-		display: none;
-	}
-
-`;
-
-export const MenuContainerStyled = styled(LinkContainerStyled)`
+export const MenuContainerStyled = styled.div`
     display: none;
     font-size: 30px;
     color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};  
     cursor: pointer;
     @media (max-width: 768px) {
 		display: flex;
+        align-items: center;
 	}
 `;
 
