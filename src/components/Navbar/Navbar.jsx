@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
         <NavItemsContainerStyled>
 
-        <motion.div whileTap={{scale: 0.90}}>
+        <motion.div whileTap={{scale: 0.90}}> 
               <MenuContainerStyled icon onClick={() => dispatch({ type: "openBurgerMenu" })}>
                 <SlMenu/>
                 
