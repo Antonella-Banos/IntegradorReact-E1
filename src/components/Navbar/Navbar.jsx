@@ -1,8 +1,8 @@
 import React from 'react'
 import { CartContainer, LinkContainerStyled, 
 MenuContainerStyled, NavItemsContainerStyled, NavLinksWrapper, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
-import { links } from './LinksData/LinksData'
-import { NavbarLinks } from './NavbarLinks'
+// import { links } from './LinksData/LinksData'
+// import { NavbarLinks } from './NavbarLinks'
 
 
 import { useContext } from "react" 
