@@ -28,7 +28,7 @@ const Navbar = () => {
         <NavItemsContainerStyled>
 
         <motion.div whileTap={{scale: 0.90}}> 
-              <MenuContainerStyled icon onClick={() => dispatch({ type: "openBurgerMenu" })}>
+              <MenuContainerStyled icon onClick={() => dispatch({ type: "openBurgerMenu" })} >
                 <SlMenu/>
                 
               <NavLinksWrapper className={state.isBurgerMenuOpen ? "open" : ""}>

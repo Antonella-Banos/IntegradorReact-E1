@@ -74,6 +74,7 @@ export const NavLinksWrapper = styled.div`
             padding: 20px;
             gap: 30px;
             margin-top: 1rem;
+            display: flex;
         }
     }
 `;
@@ -86,7 +87,7 @@ export const MenuContainerStyled = styled.div`
     @media (max-width: 768px) {
 		display: flex;
         align-items: center;
-	}
+   }
 `;
 
 export const UserYCartContainer = styled.div`
