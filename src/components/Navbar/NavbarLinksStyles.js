@@ -8,6 +8,7 @@ export const LinkContainer = styled.div`
     display: flex;
     align-items: center;
     letter-spacing: 2px;
+    text-transform: uppercase;
     cursor: pointer;
     gap: 25px;
 `;

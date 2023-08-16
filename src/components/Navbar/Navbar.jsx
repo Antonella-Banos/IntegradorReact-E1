@@ -32,8 +32,10 @@ const Navbar = () => {
                 <SlMenu/>
                 
               <NavLinksWrapper className={state.isBurgerMenuOpen ? "open" : ""}>
-
-
+                
+              {links.map((link) => {
+                return <NavbarLinks key={link.id} {...link}/>
+              })}
               
 
              </NavLinksWrapper>
