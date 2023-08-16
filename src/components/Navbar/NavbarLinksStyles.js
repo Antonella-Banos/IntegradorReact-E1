@@ -15,7 +15,11 @@ export const LinkContainer = styled.div`
 
 export const LinkStyled = styled(LinkContainer)`
     @media (max-width: 768px) {
-		display: column;
+		a {
+            flex-direction: column;
+        }
+
+        
 	}
 `;
 

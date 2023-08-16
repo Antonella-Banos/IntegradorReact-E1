@@ -73,6 +73,7 @@ export const NavLinksWrapper = styled.div`
             align-items: center;
             padding: 20px;
             gap: 30px;
+            margin-top: 1rem;
         }
     }
 `;
