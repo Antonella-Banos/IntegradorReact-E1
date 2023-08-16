@@ -67,7 +67,7 @@ export const NavLinksWrapper = styled.div`
             z-index: 2;
             top: 80px;
             right: 14%;
-            width: 40%;
+            width: 300px;
             flex-direction: column;
             background-color: #7ca1d5;
             align-items: center;
@@ -84,6 +84,7 @@ export const MenuContainerStyled = styled.div`
     font-size: 30px;
     color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};  
     cursor: pointer;
+
     @media (max-width: 768px) {
 		display: flex;
         align-items: center;

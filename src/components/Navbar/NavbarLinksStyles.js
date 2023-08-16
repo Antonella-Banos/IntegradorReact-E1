@@ -18,8 +18,6 @@ export const LinkStyled = styled(LinkContainer)`
 		a {
             flex-direction: column;
         }
-
-        
 	}
 `;
 
