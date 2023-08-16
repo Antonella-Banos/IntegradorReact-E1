@@ -1,8 +1,7 @@
 import React from 'react'
-import { CartContainer, LinkContainerStyled, 
-MenuContainerStyled, NavItemsContainerStyled, NavLinksWrapper, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
-// import { links } from './LinksData/LinksData'
-// import { NavbarLinks } from './NavbarLinks'
+import { CartContainer, MenuContainerStyled, NavItemsContainerStyled, NavLinksWrapper, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
+import { links } from './LinksData/LinksData'
+import { NavbarLinks } from './NavbarLinks'
 
 
 import { useContext } from "react" 
@@ -34,45 +33,6 @@ const Navbar = () => {
                 
               <NavLinksWrapper className={state.isBurgerMenuOpen ? "open" : ""}>
 
-             {/* <HomeContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}> 
-                <a href="/#">
-                   <LinkContainerStyled> 
-                      HOME
-                   </LinkContainerStyled>
-                </a>
-              </motion.div> 
-            </HomeContainerStyled>
-
-            <AlbumsContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}>
-                <a href="/#">
-                  <LinkContainerStyled> 
-                    ÁLBUMES
-                  </LinkContainerStyled>
-                </a>
-              </motion.div>
-            </AlbumsContainerStyled> 
-
-            <AboutContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}>
-                <a href="/#">
-                  <LinkContainerStyled>
-                    STORE
-                  </LinkContainerStyled>
-                </a>
-              </motion.div>
-            </AboutContainerStyled>
-
-            <ContactContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}>
-                <a href="/#">
-                  <LinkContainerStyled>
-                    CONTACTO
-                  </LinkContainerStyled>
-                </a>
-              </motion.div>
-            </ContactContainerStyled> */}
 
               
 
@@ -80,55 +40,6 @@ const Navbar = () => {
 
               </MenuContainerStyled>
             </motion.div> 
-
-
-             {/* <NavLinksWrapper>
-             <HomeContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}> 
-                <a href="/#">
-                   <LinkContainerStyled> 
-                      HOME
-                   </LinkContainerStyled>
-                </a>
-              </motion.div> 
-            </HomeContainerStyled>
-
-            <AlbumsContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}>
-                <a href="/#">
-                  <LinkContainerStyled> 
-                    ÁLBUMES
-                  </LinkContainerStyled>
-                </a>
-              </motion.div>
-            </AlbumsContainerStyled> 
-
-            <AboutContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}>
-                <a href="/#">
-                  <LinkContainerStyled>
-                    STORE
-                  </LinkContainerStyled>
-                </a>
-              </motion.div>
-            </AboutContainerStyled>
-
-            <ContactContainerStyled>
-              <motion.div whileTap={{scale: 0.90}}>
-                <a href="/#">
-                  <LinkContainerStyled>
-                    CONTACTO
-                  </LinkContainerStyled>
-                </a>
-              </motion.div>
-            </ContactContainerStyled>
-             </NavLinksWrapper> */}
-
-            {/* <motion.div whileTap={{scale: 0.90}}>
-              <MenuContainerStyled icon>
-                <SlMenu/>
-              </MenuContainerStyled>
-            </motion.div>     */}
 
 
             <UserYCartContainer>
