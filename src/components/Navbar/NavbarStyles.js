@@ -65,16 +65,18 @@ export const NavLinksWrapper = styled.ul`
 
         &.open {
             position: absolute;
-            z-index: 2;
+            z-index: 1;
             top: 80px;
-            right: 14%;
-            width: 300px;
+            right: 25%;
+            left: 25%;
+            width: 50%;
             flex-direction: column;
             background-color: #7ca1d5;
             align-items: center;
             padding: 20px;
             gap: 30px;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
+            display: flex;
         }
     }
 `;
