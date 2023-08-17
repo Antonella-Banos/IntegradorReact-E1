@@ -32,35 +32,36 @@ export const NavbarContainerStyled = styled.nav`
     }
 `;
 
-export const NavItemsContainerStyled = styled.div`
-    color: #fff;
+export const MenuStyled = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+`;
 
-    a {
-        padding: 0.5rem;
-        display: flex;
-        justify-content: center;
-		align-items: center;
-        gap: 8px;
-    }
-
-    a:hover {
-        color: #f7cac9;
-    }
+export const MenuContainer = styled.div`
+    display: none;
 
     @media (max-width: 768px) {
-        gap: 10px;
+		display: flex;
+        font-size: 2rem;
+        color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};  
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(0.9);
+            transition: all 0.7s; 
+        }
     }
 `;
 
-export const NavLinksWrapper = styled.div`
+export const NavLinksWrapper = styled.ul`
     display: flex;
     gap: 25px;
+    padding: 0;
     
     @media (max-width: 768px) {
+
+        display: none;
 
         &.open {
             position: absolute;
@@ -74,21 +75,24 @@ export const NavLinksWrapper = styled.div`
             padding: 20px;
             gap: 30px;
             margin-top: 1rem;
-            display: flex;
         }
     }
 `;
 
-export const MenuContainerStyled = styled.div`
-    display: none;
-    font-size: 30px;
-    color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};  
+export const NavLinks = styled.li`
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     cursor: pointer;
+    gap: 40px;
 
-    @media (max-width: 768px) {
-		display: flex;
-        align-items: center;
-   }
+    &:hover {
+        color: #f7cac9;
+    }
 `;
 
 export const UserYCartContainer = styled.div`
@@ -103,10 +107,20 @@ export const UserContainer = styled.div`
     color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};   
     cursor: pointer;
     font-size: 25px;
+
+    &:hover {
+    transform: scale(1.1);
+    transition: all 0.7s;  
+    }
 `;
 
 export const CartContainer = styled.div`
     color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};   
     cursor: pointer;
     font-size: 25px;
+
+    &:hover {
+    transform: scale(1.1);
+    transition: all 0.7s;  
+    }
 `;
