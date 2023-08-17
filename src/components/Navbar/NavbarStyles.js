@@ -74,7 +74,7 @@ export const NavLinksWrapper = styled.ul`
             background-color: #7ca1d5;
             align-items: center;
             padding: 20px;
-            gap: 30px;
+            gap: 40px;
             margin-top: 1.5rem;
             display: flex;
         }
