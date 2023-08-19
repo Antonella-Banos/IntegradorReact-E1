@@ -1,4 +1,4 @@
-export const products = [
+export const allAlbums = [
     {
         id: 1,
         title: "SEVENTEEN 10th Mini Album 'FML'",

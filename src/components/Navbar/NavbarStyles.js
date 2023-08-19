@@ -52,6 +52,10 @@ export const MenuContainer = styled.div`
             transition: all 0.7s; 
         }
     }
+
+    @media (max-width: 440px) {
+        margin-right: 10px;
+    }
 `;
 
 export const NavLinksWrapper = styled.ul`
@@ -77,6 +81,23 @@ export const NavLinksWrapper = styled.ul`
             gap: 40px;
             margin-top: 1.5rem;
             display: flex;
+
+            @media (max-width: 576px) {
+                width: 50%;
+                right: 25%;
+                left: 25%;
+            }
+
+            @media (max-width: 440px) {
+                width: 100%;
+                right: 0;
+                left: 0;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin: 1rem 0;
+                padding: 20px 0;
+            }
         }
     }
 `;

@@ -41,10 +41,11 @@ export const AboutTextContainer = styled.div`
 `;
 
 
-export const PaymentMethodContainer = styled.section`
+export const PaymentMethodContainer = styled.div`
     display: flex;
 	flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 	max-width: 1200px;
 	width: 100%;
 	margin: 5rem 1rem;
@@ -99,7 +100,7 @@ export const PaymentMethodText = styled.p`
 `;
 
 
-export const SocialMediaContainer = styled.section`
+export const SocialMediaContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -107,9 +108,7 @@ export const SocialMediaContainer = styled.section`
 	max-width: 1200px;
 	width: 100%;
 	margin: 5rem 1rem;
-`;
 
-export const SocialMediaLinksContainer = styled.div`
     h2 {
         color: #7e9dd4;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -118,7 +117,9 @@ export const SocialMediaLinksContainer = styled.div`
         text-transform: uppercase;
         font-size: 2rem;
     }
+`;
 
+export const SocialMediaLinksContainer = styled.div`
     p {
         font-size: 1.5rem;
         font-family: 'Pathway Gothic One', sans-serif;

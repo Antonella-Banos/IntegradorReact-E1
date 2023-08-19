@@ -2,10 +2,10 @@ import React from 'react'
 import { ProductCard } from './ProductsCardStyles'
 import Button from '../UI/Button/Button'
 
-const AlbumCard = ({img, title, release, price}) => {
+const AlbumCard = ({img, title, release, price, category}) => {
   return (
     <ProductCard>
-        <img src={img} alt={title} />
+        <img src={img} alt={category} />
         <h2>{title}</h2>
         <h3>Fecha de lanzamiento</h3>
         <p>{release}</p>
