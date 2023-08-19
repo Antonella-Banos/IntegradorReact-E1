@@ -15,7 +15,7 @@ const Formulario = () => {
                     <textarea name='asunto' id='asunto' cols='30' rows='10'>Asunto</textarea>
                 </ContactForm>
 
-                <ContactFormButton type='submit'>Enviar</ContactFormButton>
+                <ContactFormButton type='submit' radius='18'>Enviar</ContactFormButton>
             </ContactCard>
         </ContactFormContainer>
     )
