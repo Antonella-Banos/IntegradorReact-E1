@@ -1,7 +1,7 @@
 import React from "react"
 import { CategoriesContainer, CategoriesWrapper } from "./CategoriasStyles"
 import { categories } from "../../../data/Categories"
-import Category from "Category"
+import Category from "./Category"
 
 const Categorias = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react"
 import { ButtonContainer, ProductsContainer, ProductsWrapper } from "./ProductsCardStyles"
-import AlbumCard from "AlbumCard"
+import AlbumCard from "./AlbumCard"
 import { Button }  from "../../../components/UI/Button/Button"
 
 const ProductsCard = () => {
