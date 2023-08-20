@@ -1,8 +1,8 @@
-import React from 'react'
-import { ButtonContainer, ProductsContainer, ProductsWrapper } from './ProductsCardStyles'
-import { albumesDestacados } from '../../data/AlbumesDestacados'
-import AlbumCard from './AlbumCard'
-import Button from '../UI/Button/Button'
+import React from "react";
+import { ButtonContainer, ProductsContainer, ProductsWrapper } from "ProductsCardStyles"
+import { albumesDestacados } from "../../../data/AlbumesDestacados";
+import AlbumCard from "AlbumCard";
+import Button from "../../../components/UI/Button/Button";
 
 const ProductsCard = () => {
   return (
