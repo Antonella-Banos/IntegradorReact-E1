@@ -1,23 +1,22 @@
-import React from "react";
-import { ButtonContainer, ProductsContainer, ProductsWrapper } from "ProductsCardStyles"
-import { albumesDestacados } from "../../../data/AlbumesDestacados";
-import AlbumCard from "AlbumCard";
-import Button from "../../../components/UI/Button/Button";
+import React from "react"
+import { ButtonContainer, ProductsContainer, ProductsWrapper } from "./ProductsCardStyles"
+import AlbumCard from "AlbumCard"
+import { Button }  from "../../../components/UI/Button/Button"
 
 const ProductsCard = () => {
   return (
     <ProductsWrapper>
-        <h2>Álbumes Destacados</h2>
-        <ProductsContainer>
+         <h2>Álbumes Destacados</h2>
+         <ProductsContainer>
             {
-                albumesDestacados.map((album) => {
-                    return <AlbumCard key={album.id} {...album}/>
-                })
-            }
-        </ProductsContainer>
-        <ButtonContainer>
-          <Button radius='18'>Ver todos </Button>
-        </ButtonContainer>
+              albumesDestacados.map((album) => {
+                return <AlbumCard key={album.id} {...album}/>
+              })
+            } 
+         </ProductsContainer>
+         <ButtonContainer>
+           <Button radius='18'>Ver todos</Button>
+         </ButtonContainer>
     </ProductsWrapper>
   )
 }
