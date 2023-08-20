@@ -3,7 +3,7 @@ import Hero from './Hero/Hero'
 import Categorias from './Categorias/Categorias'
 import ProductsCard from './Productos/ProductsCard'
 
-const Home = () => {  
+function Home {  
   return (
     <>
     <Hero/>
@@ -13,4 +13,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home 
