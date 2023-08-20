@@ -2,6 +2,7 @@ import React from "react"
 import { ButtonContainer, ProductsContainer, ProductsWrapper } from "./ProductsCardStyles"
 import AlbumCard from "./AlbumCard"
 import { Button }  from "../../../components/UI/Button/Button"
+import { albumesDestacados } from "../../../data/AlbumesDestacados" 
 
 const ProductsCard = () => {
   return (
