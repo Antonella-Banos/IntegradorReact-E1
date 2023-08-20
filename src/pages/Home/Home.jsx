@@ -3,7 +3,7 @@ import Hero from './Hero/Hero'
 import Categorias from './Categorias/Categorias'
 import ProductsCard from './Productos/ProductsCard'
 
-function Home {  
+function Home() {  
   return (
     <>
     <Hero/>

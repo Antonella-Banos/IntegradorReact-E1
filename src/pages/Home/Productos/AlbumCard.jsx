@@ -1,6 +1,6 @@
 import React from 'react'
 import { ProductCard } from './ProductsCardStyles'
-import Button from '../UI/Button/Button'
+import { Button } from "../../../components/UI/Button/Button"
 
 const AlbumCard = ({img, title, release, price, category}) => {
   return (
