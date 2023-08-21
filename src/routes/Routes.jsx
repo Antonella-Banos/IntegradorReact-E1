@@ -6,6 +6,7 @@ import Albumes from '../pages/Albumes/Albumes'
 import Nosotros from '../pages/Nosotros/Nosotros'
 import Contacto from '../pages/Contacto/Contacto'
 
+
 const Routes = () => {
   return (
     <BrowserRouter>
@@ -16,7 +17,7 @@ const Routes = () => {
           <Route path='store' element={<Nosotros/>}/>
           <Route path='contacto' element={<Contacto/>}/>
 
-          
+          <Route path='*' element={ <h2>Página no encontrada</h2> }/>
 
         </ReactDomRoutes>
       </Layout> 
