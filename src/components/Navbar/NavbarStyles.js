@@ -1,4 +1,6 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+
 
 export const NavbarWrapper = styled.header`
     width: 100%;
@@ -102,7 +104,7 @@ export const NavLinksWrapper = styled.ul`
     }
 `;
 
-export const NavLinks = styled.li`
+export const NavLinks = styled(NavLink)`
     color: #fff;
     font-size: 20px;
     font-family: 'Pathway Gothic One', sans-serif;
