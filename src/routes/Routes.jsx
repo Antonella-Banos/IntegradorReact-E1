@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes as ReactDomRoutes, Route } from "react-router-dom"
 import Layout from "../components/Layout/Layout"
-import Home from "../pages/Home/Home"
-import Albumes from "../pages/Albumes/Albumes"
-import Nosotros from "../pages/Nosotros/Nosotros"
-import Contacto from "../pages/Contacto/Contacto"
+import Home from '../pages/Home/Home'
+import Albumes from '../pages/Albumes/Albumes'
+import Nosotros from '../pages/Nosotros/Nosotros'
+import Contacto from '../pages/Contacto/Contacto'
 
 const Routes = () => {
   return (

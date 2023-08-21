@@ -2,7 +2,7 @@ import React from 'react'
 import { ContactForm, ContactFormButton, ContactFormContainer } from './ContactoStyles'
 
 
-const Formulario = () => {
+const Contacto = () => {
     return (
         <ContactFormContainer>
             <ContactCard>
@@ -22,4 +22,4 @@ const Formulario = () => {
 
 }
 
-export default Formulario
+export default Contacto 

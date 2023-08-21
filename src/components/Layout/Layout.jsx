@@ -12,9 +12,7 @@ const LayoutWrapper = styled.main`
   align-items: center;
 `;
 
-const ContentContainer = styled.div`
-  padding-top: 7rem;
-`;
+const ContentContainer = styled.div``;
 
 const Layout = ({children}) => {
   return (
@@ -22,7 +20,7 @@ const Layout = ({children}) => {
         <BurgerMenu>
           <Navbar/>
         </BurgerMenu>
-        <ContentContainer>{children}</ContentContainer>
+       {children}
         <Footer/>
     </LayoutWrapper>
   )
