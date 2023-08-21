@@ -27,10 +27,10 @@ const Navbar = () => {
 
             <NavLinksWrapper className={state.isBurgerMenuOpen ? "open" : ""}> 
 
-            <NavLinks>Home</NavLinks>
-            <NavLinks>Álbumes</NavLinks>
-            <NavLinks>Store</NavLinks>
-            <NavLinks>Contacto</NavLinks>
+            <NavLinks to='/'>Home</NavLinks>
+            <NavLinks to='/albumes'> Álbumes</NavLinks>
+            <NavLinks to='/store'>Store</NavLinks>
+            <NavLinks to='/contacto'>Contacto</NavLinks>
 
             </NavLinksWrapper>
           </MenuStyled>
