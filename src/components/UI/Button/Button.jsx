@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyledButton } from './ButtonStyles'
 
-const Button = ({
+export const Button = ({
     children,
     radius = '25',
     disabled = false

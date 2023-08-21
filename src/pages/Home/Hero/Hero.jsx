@@ -2,6 +2,7 @@ import React from "react"
 import { HeroContainerStyled, HeroImageContainerStyled, HeroTextContainerStyled } from "./HeroStyles"
 import { Button } from "../../../components/UI/Button/Button"
 
+
 const Hero = () => {
   return (
     <HeroContainerStyled>
