@@ -12,15 +12,13 @@ const LayoutWrapper = styled.main`
   align-items: center;
 `;
 
-const ContentContainer = styled.div``;
-
-const Layout = ({children}) => {
+function Layout({children}) {
   return (
     <LayoutWrapper>
         <BurgerMenu>
           <Navbar/>
         </BurgerMenu>
-       {children}
+        {children}
         <Footer/>
     </LayoutWrapper>
   )
