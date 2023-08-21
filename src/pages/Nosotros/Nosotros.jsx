@@ -11,7 +11,7 @@ import {BsFacebook} from "react-icons/bs"
 import {BsWhatsapp} from "react-icons/bs"
 
 
-const About = () => {
+function About() {
     return (
         <AboutContainer>
             <img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/15/assets/17/images/live_event/alwaysyours/main.jpg" alt="Seventeen" />

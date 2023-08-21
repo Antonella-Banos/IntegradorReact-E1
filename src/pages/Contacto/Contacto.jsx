@@ -2,7 +2,7 @@ import React from 'react'
 import { ContactForm, ContactFormButton, ContactFormContainer } from './ContactoStyles'
 
 
-const Contacto = () => {
+function Contacto() {
     return (
         <ContactFormContainer>
             <ContactCard>

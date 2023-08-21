@@ -3,7 +3,7 @@ import { ProductsContainer, ProductsWrapper } from '../Home/Productos/ProductsCa
 import { AlbumCard } from '../Home/Productos/AlbumCard'
 import { allAlbums } from './data/AllAlbums'
 
-const AllAlbums = () => {
+function AllAlbums() {
     return (
         <ProductsWrapper>
            <h2>Todos los álbumes</h2>
