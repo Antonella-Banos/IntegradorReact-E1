@@ -9,12 +9,18 @@ export const AboutContainer = styled.section`
     margin-top: 7rem;
 
     img {
-        width: 80%;
+        width: 100%;
         align-items: center;
     }
 `;
 
 export const AboutTextContainer = styled.div`
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
     h1 {
         font-size: 4rem;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -22,6 +28,10 @@ export const AboutTextContainer = styled.div`
         letter-spacing: 3px;
         color: #7e9dd4;
         margin: 10px 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
     }
 
     p {
@@ -31,13 +41,11 @@ export const AboutTextContainer = styled.div`
         margin: 10px 0;
         margin-bottom: 1.5rem;
         color: #333;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
     }
-
-    @media (max-width: 1000px) {
-            width: 80%;
-            align-items: center;
-            text-align: center;
-        }
 `;
 
 
@@ -45,10 +53,13 @@ export const PaymentMethodContainer = styled.div`
     display: flex;
 	flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 	max-width: 1200px;
 	width: 100%;
 	margin: 5rem 1rem;
+    padding: 0 1rem;
+
     h2 {
         color: #7e9dd4;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -56,6 +67,10 @@ export const PaymentMethodContainer = styled.div`
         letter-spacing: 3px;
         text-transform: uppercase;
         font-size: 3.1rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
     }
 	@media (max-width: 768px) {
 		padding-top: 30px;
@@ -69,7 +84,7 @@ export const PaymentMethodCardContainer = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	gap: 40px;
+	gap: 50px;
 `;
 
 export const PaymentMethodCards = styled.div`

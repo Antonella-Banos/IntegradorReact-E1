@@ -27,7 +27,7 @@ function About() {
                <PaymentMethodCardContainer>
 
                   <PaymentMethodCards>
-                    <h3>Tarjetas de crédito y débito</h3>
+                    <h3>Crédito y débito</h3>
                     <AiFillCreditCard/>
                   </PaymentMethodCards>
 
