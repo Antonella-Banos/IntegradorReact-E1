@@ -57,7 +57,7 @@ export const PaymentMethodContainer = styled.div`
     flex-wrap: wrap;
 	max-width: 1200px;
 	width: 100%;
-	margin: 5rem 1rem;
+	margin: 5rem 0;
     padding: 0 1rem;
 
     h2 {
@@ -84,22 +84,24 @@ export const PaymentMethodCardContainer = styled.div`
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	gap: 50px;
+	gap: 40px;
 `;
 
 export const PaymentMethodCards = styled.div`
     display: flex;
+    flex-direction: column;
 	justify-content: center;
 	align-items: center;
     background: #b4c8ea;
-    width: 270px;
+    width: 230px;
     border-radius: 1rem;
     padding: 1rem;
 
     h3 {
        color: #fff;
-       font-weight: 600;
-       font-family: 'Nanum Gothic Coding', sans-serif;
+       font-size: 20px;
+       font-weight: 400;
+       font-family: 'Pathway Gothic One', sans-serif;
        text-transform: uppercase;
        letter-spacing: 1px;
     }
