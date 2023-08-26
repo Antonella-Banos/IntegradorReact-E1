@@ -95,7 +95,9 @@ export const PaymentMethodCards = styled.div`
     background: #b4c8ea;
     width: 230px;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.8rem;
+    font-size: 3rem;
+    /* color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")}; */
 
     h3 {
        color: #fff;
@@ -111,15 +113,17 @@ export const PaymentMethodText = styled.p`
     font-size: 1.5rem;
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 0.5px;
-    margin: 10px 0;
+    margin: 16px 0;
     margin-bottom: 1.5rem;
     color: #333;
+    display: flex;
+    flex-direction: column;
 `;
 
 
 export const SocialMediaContainer = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 	max-width: 1200px;
@@ -137,6 +141,12 @@ export const SocialMediaContainer = styled.div`
 `;
 
 export const SocialMediaLinksContainer = styled.div`
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 2rem;
+    /* color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")}; */
+    
     p {
         font-size: 1.5rem;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -144,6 +154,12 @@ export const SocialMediaLinksContainer = styled.div`
         margin: 10px 0;
         margin-bottom: 1.5rem;
         color: #333;
+        cursor: pointer;
+    }
+
+    &:hover {
+        text-decoration: underline solid 2px #f7cac9;
+        text-underline-offset: 3px;
     }
 `;
 

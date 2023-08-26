@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { StyledButton } from "../../components/UI/Button/ButtonStyles";
+import Button from "../../components/UI/Button/Button";
 
 export const ContactFormContainer = styled.div`
     max-width: 320px;
@@ -52,7 +52,7 @@ export const ContactForm = styled.form`
     }
 `;
 
-export const ContactFormButton = styled(StyledButton)`
+export const ContactFormButton = styled(Button)`
     display: flex;
     justify-content: center;
 `;

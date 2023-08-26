@@ -26,17 +26,17 @@ function About() {
              <h2>Nuestros métodos de pago</h2>
                <PaymentMethodCardContainer>
 
-                  <PaymentMethodCards>
+                  <PaymentMethodCards icon>
                     <h3>Crédito y débito</h3>
                     <AiFillCreditCard/>
                   </PaymentMethodCards>
 
-                  <PaymentMethodCards>
+                  <PaymentMethodCards icon>
                     <h3>Mercado Pago</h3>
                     <SiMercadopago/>
                   </PaymentMethodCards>
 
-                  <PaymentMethodCards>
+                  <PaymentMethodCards icon>
                     <h3>Transferencia bancaria</h3>
                     <BiSolidBank/>
                   </PaymentMethodCards>
@@ -44,9 +44,9 @@ function About() {
                </PaymentMethodCardContainer>
 
                <PaymentMethodText>
-                <p>Realizamos envíos a todo el país</p> <BsBoxSeam/>
-                <p>Nos aseguramos de que llegue a tu casa</p> <BsHouseCheckFill/>
-               </PaymentMethodText>
+                <p>Realizamos envíos a todo el país<BsBoxSeam/></p> 
+                <p>Nos aseguramos de que llegue a tu casa<BsHouseCheckFill/></p> 
+               </PaymentMethodText> 
            </PaymentMethodContainer> 
 
            <SocialMediaContainer>
