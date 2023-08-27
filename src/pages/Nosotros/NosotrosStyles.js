@@ -58,7 +58,6 @@ export const PaymentMethodContainer = styled.div`
 	max-width: 1200px;
 	width: 100%;
 	margin: 5rem 0;
-    padding: 0 1rem;
 
     h2 {
         color: #7e9dd4;
@@ -97,7 +96,7 @@ export const PaymentMethodCards = styled.div`
     border-radius: 1rem;
     padding: 0.8rem;
     font-size: 3rem;
-    /* color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")}; */
+    color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};
 
     h3 {
        color: #fff;
@@ -113,23 +112,26 @@ export const PaymentMethodText = styled.p`
     font-size: 1.5rem;
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 0.5px;
-    margin: 16px 0;
+    margin: 16px;
     margin-bottom: 1.5rem;
     color: #333;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `;
 
 
 export const SocialMediaContainer = styled.div`
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 	max-width: 1200px;
 	width: 100%;
 	margin: 5rem 1rem;
-
+    gap: 2rem;
+    align-items: baseline;
     h2 {
         color: #7e9dd4;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -141,9 +143,11 @@ export const SocialMediaContainer = styled.div`
 `;
 
 export const SocialMediaLinksContainer = styled.div`
-    flex-direction: column;
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 1.5rem;
     font-size: 2rem;
     /* color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")}; */
     
