@@ -113,7 +113,6 @@ export const PaymentMethodText = styled.p`
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 0.5px;
     margin: 16px;
-    margin-bottom: 1.5rem;
     color: #333;
     display: flex;
     flex-direction: column;
