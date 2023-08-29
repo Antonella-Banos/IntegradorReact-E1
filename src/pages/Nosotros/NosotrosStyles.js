@@ -95,7 +95,7 @@ export const PaymentMethodCards = styled.div`
     width: 230px;
     border-radius: 1rem;
     padding: 0.8rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};
 
     h3 {
