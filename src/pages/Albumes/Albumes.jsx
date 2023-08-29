@@ -6,7 +6,7 @@ import { allAlbums } from './data/AllAlbums'
 function AllAlbums() {
     return (
         <ProductsWrapper>
-           <h2>Todos los álbumes</h2>
+           <h2 style={{marginTop: "6rem"}}>álbumes</h2>
            <ProductsContainer>
               {
                 allAlbums.map((album) => {

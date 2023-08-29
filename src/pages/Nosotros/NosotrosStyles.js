@@ -109,7 +109,7 @@ export const PaymentMethodCards = styled.div`
 `;
 
 export const PaymentMethodText = styled.p`
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 0.5px;
     margin: 0 20px 20px 20px;
@@ -151,7 +151,7 @@ export const SocialMediaLinksContainer = styled.div`
     /* color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")}; */
     
     p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-family: 'Pathway Gothic One', sans-serif;
         letter-spacing: 0.5px;
         margin: 10px 0;
