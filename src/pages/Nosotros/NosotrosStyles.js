@@ -112,7 +112,7 @@ export const PaymentMethodText = styled.p`
     font-size: 1.5rem;
     font-family: 'Pathway Gothic One', sans-serif;
     letter-spacing: 0.5px;
-    margin: 16px;
+    margin: 0 20px 20px 20px;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@ export const SocialMediaContainer = styled.div`
     flex-wrap: wrap;
 	max-width: 1200px;
 	width: 100%;
-	margin: 5rem 1rem;
+	margin: 5rem 0;
     gap: 2rem;
     align-items: baseline;
     h2 {
@@ -158,14 +158,20 @@ export const SocialMediaLinksContainer = styled.div`
         margin-bottom: 1.5rem;
         color: #333;
         cursor: pointer;
-    }
+        flex-direction: column;
 
-    &:hover {
+        &:hover {
         text-decoration: underline solid 2px #f7cac9;
         text-underline-offset: 3px;
     }
+    }
+    
 `;
 
-export const WhatsappContainer = styled(SocialMediaLinksContainer)``;
+export const WhatsappContainer = styled(SocialMediaLinksContainer)`
+    @media (max-width:540px) {
+       margin: 20px;
+    }
+`;
 
 

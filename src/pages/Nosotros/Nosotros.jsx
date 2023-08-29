@@ -54,15 +54,10 @@ function About() {
             <h2>Nuestras redes</h2>
               <SocialMediaLinksContainer>
                 <p>Instagram <AiFillInstagram/> </p> 
-              </SocialMediaLinksContainer>
-              
-              <SocialMediaLinksContainer>
+         
                 <p>Facebook <BsFacebook/> </p>  
               </SocialMediaLinksContainer>
 
-          </SocialMediaContainer>
-
-          <SocialMediaContainer>
             <h2>Whatsapp</h2>
               <WhatsappContainer>
                 <p>011 2605-1717 <BsWhatsapp/> </p> 
