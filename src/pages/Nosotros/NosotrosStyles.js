@@ -118,6 +118,7 @@ export const PaymentMethodText = styled.p`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 `;
 
 
@@ -125,12 +126,25 @@ export const SocialMediaContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 	max-width: 1200px;
-	width: 100%;
-	margin: 5rem 0;
-    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     align-items: baseline;
+
+    @media (max-width: 400px) {
+		flex-direction: column;
+        align-items: center;
+	}
+`;
+
+export const SocialMediaLinksContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4rem;
+    width: 50%;
     h2 {
         color: #7e9dd4;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -138,24 +152,14 @@ export const SocialMediaContainer = styled.div`
         letter-spacing: 3px;
         text-transform: uppercase;
         font-size: 2rem;
+        margin: 10px 0;
     }
-`;
 
-export const SocialMediaLinksContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 1.5rem;
-    font-size: 2rem;
-    /* color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")}; */
-    
     p {
         font-size: 1.3rem;
         font-family: 'Pathway Gothic One', sans-serif;
         letter-spacing: 0.5px;
         margin: 10px 0;
-        margin-bottom: 1.5rem;
         color: #333;
         cursor: pointer;
         flex-direction: column;
@@ -168,10 +172,6 @@ export const SocialMediaLinksContainer = styled.div`
     
 `;
 
-export const WhatsappContainer = styled(SocialMediaLinksContainer)`
-    @media (max-width:540px) {
-       margin: 20px;
-    }
-`;
+export const WhatsappContainer = styled(SocialMediaLinksContainer)``;
 
 

@@ -6,15 +6,18 @@ export const ContactFormContainer = styled.div`
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
 `;
 
 export const ContactCard = styled.div`
     background: #b4c8ea;
-    width: 300px;
+    width: 280px;
     border-radius: 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     img {
         width: 100%;
@@ -33,12 +36,17 @@ export const ContactForm = styled.form`
 
     & input {
         width: 100%;
+        height: 30px;
         border: none;
         outline: none;
         background: #fff;
         color: #444;
         font-family: 'Nanum Gothic Coding', sans-serif;
         font-size: 1rem;
+
+        &::placeholder {
+            padding-left: 10px;
+        }
     }
 
     & textarea {
@@ -49,6 +57,10 @@ export const ContactForm = styled.form`
         color: #444;
         font-family: 'Nanum Gothic Coding', sans-serif;
         font-size: 1rem;
+
+        &::placeholder {
+            padding-left: 10px;
+        }     
     }
 `;
 

@@ -44,26 +44,25 @@ function About() {
                </PaymentMethodCardContainer>
            </PaymentMethodContainer> 
 
-           <PaymentMethodText>
+          <PaymentMethodText>
                 <p>Realizamos envíos a todo el país <BsBoxSeam style={{color: "#f7cac9", fontSize: "2rem"}}/> </p> 
                 <p>Nos aseguramos de que llegue a tu casa <BsHouseCheckFill style={{color: "#f7cac9", fontSize: "2rem"}}/> </p> 
           </PaymentMethodText> 
 
           <SocialMediaContainer>
 
-            <h2>Nuestras redes</h2>
-              <SocialMediaLinksContainer>
-                <p>Instagram <AiFillInstagram style={{color: "#f7cac9"}}/> </p> 
-         
-                <p>Facebook <BsFacebook style={{color: "#f7cac9"}}/> </p>  
-              </SocialMediaLinksContainer>
+           <SocialMediaLinksContainer>
+             <h2>Nuestras redes</h2>
+             <p>Instagram <AiFillInstagram style={{color: "#f7cac9"}}/> </p> 
+             <p>Facebook <BsFacebook style={{color: "#f7cac9"}}/> </p>  
+           </SocialMediaLinksContainer>
 
-            <h2>Whatsapp</h2>
-              <WhatsappContainer>
-                <p>011 2605-1717 <BsWhatsapp style={{color: "#f7cac9"}}/> </p> 
-              </WhatsappContainer>
+           <WhatsappContainer>
+             <h2>Whatsapp</h2>
+             <p>011 2605-1717 <BsWhatsapp style={{color: "#f7cac9"}}/> </p> 
+           </WhatsappContainer>
           </SocialMediaContainer>
- 
+          
         </AboutContainer>
         
       
