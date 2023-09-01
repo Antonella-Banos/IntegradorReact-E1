@@ -6,7 +6,7 @@ export const ContactFormContainer = styled.div`
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
+    margin-top: 11rem;
     margin-bottom: 3rem;
 `;
 
