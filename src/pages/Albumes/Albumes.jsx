@@ -5,12 +5,15 @@ import { allAlbums } from './data/AllAlbums'
 import { CategoriesContainer, CategoriesWrapper } from '../Home/Categorias/CategoriasStyles'
 import Category from '../Home/Categorias/Category'
 import { categories } from '../../data/Categories'
+import { ButtonsContainerStyled } from './AlbumesStyles'
+import Button from '../../components/UI/Button/Button'
 
 
 
 function AllAlbums() {
     return (
-        <ProductsWrapper>
+        <>
+         <ProductsWrapper>
            <h2 style={{marginTop: "6rem", marginBottom: "unset"}}>álbumes</h2>
 
            <CategoriesWrapper>
@@ -31,6 +34,22 @@ function AllAlbums() {
               }
            </ProductsContainer>
         </ProductsWrapper>
+        
+        <ButtonsContainerStyled>
+           <Button
+           radius='18'
+           >
+            Ver más
+           </Button>
+           <Button
+           radius='18'
+           secondary='true'
+           >
+            Ver menos
+            </Button>
+        </ButtonsContainerStyled>
+
+        </>
     )
 }
 

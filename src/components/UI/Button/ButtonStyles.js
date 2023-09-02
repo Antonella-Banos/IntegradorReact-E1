@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 export const StyledButton = styled(motion.button)`
     padding: 0.8rem 2rem;
@@ -21,4 +21,10 @@ export const StyledButton = styled(motion.button)`
 		cursor: not-allowed;
 		opacity: 0.5;
 	}
+	${({ secondary }) =>
+	secondary && 
+	css`
+	background: #f7cac9;
+	padding: 0.5rem 1.5rem;
+	`}
 `;

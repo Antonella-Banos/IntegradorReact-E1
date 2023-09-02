@@ -3,8 +3,13 @@ import { ButtonContainer, ProductsContainer, ProductsWrapper } from "./ProductsC
 import AlbumCard from "./AlbumCard"
 import { Button }  from "../../../components/UI/Button/Button"
 import { albumesDestacados } from "../../../data/AlbumesDestacados" 
+import { useNavigate } from "react-router-dom"
 
 const ProductsCard = () => {
+  let navigate = useNavigate();
+  function handleClick() {
+    navigate('/albumes')
+  }
   return (
     <ProductsWrapper>
          <h2>Álbumes Destacados</h2>
@@ -16,7 +21,10 @@ const ProductsCard = () => {
             } 
          </ProductsContainer>
          <ButtonContainer>
-           <Button radius='18'>Ver todos</Button>
+           <Button 
+           radius='18'
+           onClick={handleClick}
+           >Ver todos</Button>
          </ButtonContainer>
     </ProductsWrapper>
   )
