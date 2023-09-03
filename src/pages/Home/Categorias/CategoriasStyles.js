@@ -38,9 +38,10 @@ export const CategoriesCard = styled(motion.div)`
 	width: 200px;
 	height: 15px;
 	border-radius: 1rem;
-	padding: 30px 10px;
+	padding: 25px 10px;
 	gap: 10px;
-	background: linear-gradient(100deg, #92a8d1, #f7cac9);
+	background: ${({ selected }) =>
+     selected ? '#f7cac9' : 'linear-gradient(100deg, #92a8d1, #f7cac9)'};
     cursor: pointer;
 	&:hover {
 		opacity: 90%;

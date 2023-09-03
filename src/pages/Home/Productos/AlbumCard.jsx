@@ -11,7 +11,10 @@ export const AlbumCard = ({img, title, release, price, category}) => {
         <p>{release}</p>
         <h3>Precio</h3>
         <p>${price}</p>
-        <Button radius='18'>Comprar</Button>
+        <Button 
+        radius='18'
+        onClick={(e) => e.preventDefault()}
+        >Comprar</Button>
     </ProductCard>
   )
 }
