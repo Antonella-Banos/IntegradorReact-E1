@@ -1,16 +1,23 @@
 import React from 'react'
-import { ProductsContainer, ProductsWrapper } from '../Home/Productos/ProductsCardStyles'
+import { useSelector } from 'react-redux'
+import { ProductsWrapper } from '../Home/Productos/ProductsCardStyles'
 import { AlbumCard } from '../Home/Productos/AlbumCard'
 import { allAlbums } from './data/AllAlbums'
 import { CategoriesContainer, CategoriesWrapper } from '../Home/Categorias/CategoriasStyles'
 import Category from '../Home/Categorias/Category'
 import { categories } from '../../data/Categories'
-import { ButtonsContainerStyled } from './AlbumesStyles'
+import { AlbumsCardContainer, ButtonsContainerStyled } from './AlbumesStyles'
 import Button from '../../components/UI/Button/Button'
 
 
 
+
 function AllAlbums() {
+
+    const albumes = useSelector((state) => state.albumes.albumes)
+
+    // console.log(albumes);
+
     return (
         <>
          <ProductsWrapper>
@@ -26,13 +33,13 @@ function AllAlbums() {
             </CategoriesContainer>
            </CategoriesWrapper>
 
-           <ProductsContainer>
+           <AlbumsCardContainer>
               {
                 allAlbums.map((album) => {
                     return <AlbumCard key={album.id} {...album}/>
                 })
               }
-           </ProductsContainer>
+           </AlbumsCardContainer>
         </ProductsWrapper>
         
         <ButtonsContainerStyled>
