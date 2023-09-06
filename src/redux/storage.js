@@ -8,7 +8,7 @@ import albumesReducer from "./albumes/albumesSlice"
 
 const reducers = combineReducers({
     categorias: categoriesReducer,
-    albumes: albumesReducer
+    albumes: albumesReducer,
 });
 
 const persistConfig = {

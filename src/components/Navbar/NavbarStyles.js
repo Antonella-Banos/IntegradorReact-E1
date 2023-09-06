@@ -154,18 +154,19 @@ export const CartContainer = styled.div`
 export const CartBubble = styled.div`
     position: relative;
     cursor: pointer;
+    padding-right: 15px;
 
     span {
         position: absolute;
         top: 0;
-        height: 15px;
-        width: 15px;
+        height: 18px;
+        width: 18px;
         text-align: center;
         background-color: #ef94bd;
         border: 1px solid white;
-        border-radius: 0.5rem;
+        border-radius: 1rem;
         color: white;
-        font-size: 8px;
+        font-size: 15px;
         font-family: 'Pathway Gothic One', sans-serif;
     }
 `;

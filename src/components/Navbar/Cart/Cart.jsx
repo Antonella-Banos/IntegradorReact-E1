@@ -1,14 +1,14 @@
 import { FaShoppingCart } from "react-icons/fa";
-import { UserContainer } from "../NavbarStyles";
+import { CartContainer } from "../NavbarStyles";
 
 
 
 const Cart = () => {
   return (
-    <UserContainer>
+    <CartContainer icon>
         <FaShoppingCart/>
         <span>0</span>
-    </UserContainer>
+    </CartContainer>
   );
 };
 
