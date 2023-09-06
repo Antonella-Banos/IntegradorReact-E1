@@ -150,3 +150,22 @@ export const CartContainer = styled.div`
     transition: all 0.7s;  
     }
 `;
+
+export const CartBubble = styled.div`
+    position: relative;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        top: 0;
+        height: 15px;
+        width: 15px;
+        text-align: center;
+        background-color: #ef94bd;
+        border: 1px solid white;
+        border-radius: 0.5rem;
+        color: white;
+        font-size: 8px;
+        font-family: 'Pathway Gothic One', sans-serif;
+    }
+`;
