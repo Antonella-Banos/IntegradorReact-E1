@@ -143,6 +143,7 @@ export const CartContainer = styled.div`
     color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};   
     cursor: pointer;
     font-size: 25px;
+    align-items: center;
 
     &:hover {
     transform: scale(1.1);
