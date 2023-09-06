@@ -47,6 +47,10 @@ export const ContactForm = styled.form`
         &::placeholder {
             padding-left: 10px;
         }
+
+        &:focus {
+            border: 2.5px solid #7ca1d5;
+        }
     }
 
     & textarea {
@@ -60,7 +64,11 @@ export const ContactForm = styled.form`
 
         &::placeholder {
             padding-left: 10px;
-        }     
+        } 
+        
+        &:focus {
+            border: 2.5px solid #7ca1d5;
+        }
     }
 `;
 
