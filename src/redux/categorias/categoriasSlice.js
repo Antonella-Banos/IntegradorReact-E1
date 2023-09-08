@@ -3,14 +3,18 @@ import { categories } from "../../data/Categories";
 
 const INITIAL_STATE = {
     categorias: categories,
+    selectedCategory: null
 }
 
 export const categoriasSlice = createSlice({
     name: "categorias",
     initialState: INITIAL_STATE,
     reducers: {
-        getCategorias: state => {
-            return state
+        selectCategory : (state, action) => {
+          return (
+            ...state,
+            selectedCategory: action.payload
+          )
         }
     }
 })
