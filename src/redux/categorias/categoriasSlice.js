@@ -11,16 +11,21 @@ export const categoriasSlice = createSlice({
     initialState: INITIAL_STATE,
     reducers: {
         selectCategory : (state, action) => {
-          return (
+          return {
             ...state,
-            selectedCategory: action.payload
-          )
+            selectedCategory: action.payload !== state.selectedCategory ? 
+            action.payload : null
+          }
+        },
+        categorias: (state) => {
+            return state
         }
     }
 })
 
 export const {
-    getCategorias
+    categorias,
+    selectCategory 
 } = categoriasSlice.actions
 
 

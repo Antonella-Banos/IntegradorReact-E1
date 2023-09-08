@@ -12,7 +12,7 @@ import Button from '../../components/UI/Button/Button'
 
 
 
-function AllAlbums() {
+const AllAlbums = () => {
 
     const {albumes} = useSelector((state) => state.albumes)
 
