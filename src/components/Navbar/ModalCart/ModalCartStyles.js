@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const ContainerStyled = styled(motion.div)`
+export const ModalContainerStyled = styled(motion.div)`
   position: fixed;
   top: 0;
   right: 0;
@@ -33,7 +33,7 @@ export const CloseButtonStyled = styled(motion.button)`
   cursor: pointer;
 `;
 
-export const MainContainer = styled.div`
+export const MainProductContainer = styled.div`
   height: 95px;
 `;
 
@@ -106,4 +106,30 @@ export const AlbumPriceStyled = styled(TextStyled)``;
 export const QuantityContainerStyled = styled.div`
   display: flex;
   align-items: center;
+`;
+
+export const Divider = styled.span`
+  border: 0.3px solid #fff;
+  width: 100%;
+  margin-top: 1.5rem;
+`;
+
+export const TotalPriceContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  & p {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  & span {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+  }
 `;

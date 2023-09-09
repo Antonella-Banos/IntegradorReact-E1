@@ -1,10 +1,11 @@
-import { CloseButtonStyled, ContainerStyled, MainContainer, ProductsWrapperStyled } from "./ModalCartStyles";
+import Button from "../../UI/Button/Button";
+import { CloseButtonStyled, ModalContainerStyled, Divider, MainProductContainer, ProductsWrapperStyled, TotalPriceContainer } from "./ModalCartStyles";
 import {AiOutlineClose} from "react-icons/ai"
 
 
 const ModalCartContainer = () => {
    return (
-    <ContainerStyled>
+    <ModalContainerStyled>
 
         <CloseButtonContainer>
           <CloseButtonStyled>
@@ -12,12 +13,21 @@ const ModalCartContainer = () => {
           </CloseButtonStyled>
         </CloseButtonContainer>
 
-        <MainContainer>
+        <MainProductContainer>
           <ProductsWrapperStyled>
             
           </ProductsWrapperStyled>
-        </MainContainer>
-    </ContainerStyled>
+        </MainProductContainer>
+
+        <Divider/>
+        <TotalPriceContainer>
+          <p>Total:</p>
+          <span>0</span>
+        </TotalPriceContainer>
+
+        <Button radius='18'>Finalizar compra</Button>
+        
+    </ModalContainerStyled>
    );
 };
 
