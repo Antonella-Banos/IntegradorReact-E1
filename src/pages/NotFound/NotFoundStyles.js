@@ -9,12 +9,12 @@ export const NotFoundContainer = styled.div`
    margin-top: 7rem;
 `;
 
-export const NotFoundText = styled.div`
+export const NotFoundContent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     padding: 0 1rem;
     h1 {
         font-size: 4rem;
@@ -22,11 +22,12 @@ export const NotFoundText = styled.div`
         font-weight: 700;
         letter-spacing: 3px;
         color: #7e9dd4;
-        margin: 10px 0;
+        margin: 20px 0;
         align-items: center;
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
+        text-transform: uppercase;
     }
 
     p {
@@ -53,6 +54,7 @@ export const NotFoundText = styled.div`
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
+        text-transform: uppercase;
     }
 `;
 
@@ -64,6 +66,10 @@ export const MusicVideo = styled.div`
     padding: 0 1rem;
 
     iframe {
-
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+
+    
 `;
