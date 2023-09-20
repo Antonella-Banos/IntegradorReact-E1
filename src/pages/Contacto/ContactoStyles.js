@@ -36,7 +36,8 @@ export const ContactForm = styled.form`
 
     & input {
         width: 100%;
-        height: 30px;
+        height: 35px;
+        border-radius: 0.8rem;
         border: none;
         outline: none;
         background: #fff;
@@ -55,6 +56,7 @@ export const ContactForm = styled.form`
 
     & textarea {
         width: 100%;
+        border-radius: 0.8rem;
         border: none;
         outline: none;
         background: #fff;

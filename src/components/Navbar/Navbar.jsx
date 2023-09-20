@@ -1,11 +1,11 @@
 import React from 'react'
-import { CartBubble, CartContainer, MenuContainer, MenuStyled, NavLinks, NavLinksWrapper, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
+import { CartBubble, MenuContainer, MenuStyled, NavLinks, NavLinksWrapper, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
 
 import { useContext } from "react" 
 import { Contexto } from './BurgerMenuContext'
 
 import {FaUser} from "react-icons/fa"
-import {FaShoppingCart} from "react-icons/fa"
+// import {FaShoppingCart} from "react-icons/fa"
 import {SlMenu} from "react-icons/sl"
 import Cart from './Cart/Cart'
 

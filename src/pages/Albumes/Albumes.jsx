@@ -11,14 +11,18 @@ import Button from '../../components/UI/Button/Button'
 
 
 
-
 const AllAlbums = () => {
 
     const {albumes} = useSelector((state) => state.albumes)
 
     const {categorias} = useSelector((state) => state.categorias) 
 
-    // console.log(albumes);
+    // console.log(ob);
+
+
+
+
+
 
     return (
         <>

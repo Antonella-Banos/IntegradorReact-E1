@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home'
 import AllAlbums from '../pages/Albumes/Albumes'
 import About from '../pages/Nosotros/Nosotros'
 import Contacto from '../pages/Contacto/Contacto'
+import NotFound from '../pages/NotFound/NotFound'
 
 
 const Routes = () => {
@@ -17,7 +18,7 @@ const Routes = () => {
           <Route path='store' element={<About/>}/>
           <Route path='contacto' element={<Contacto/>}/>
 
-          <Route path='*' element={ <h2>Página no encontrada</h2> }/>
+          <Route path='*' element={ <NotFound/> }/>
 
         </ReactDomRoutes>
       </Layout> 

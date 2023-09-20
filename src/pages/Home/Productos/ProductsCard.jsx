@@ -30,4 +30,4 @@ const ProductsCard = () => {
   )
 }
 
-export default ProductsCard
+export default ProductsCard 
