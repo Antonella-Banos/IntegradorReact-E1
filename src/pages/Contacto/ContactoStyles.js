@@ -42,8 +42,9 @@ export const ContactForm = styled.form`
         outline: none;
         background: #fff;
         color: #444;
-        font-family: 'Nanum Gothic Coding', sans-serif;
-        font-size: 1rem;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 0.3px;
 
         &::placeholder {
             padding-left: 10px;
@@ -61,8 +62,9 @@ export const ContactForm = styled.form`
         outline: none;
         background: #fff;
         color: #444;
-        font-family: 'Nanum Gothic Coding', sans-serif;
-        font-size: 1rem;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 1.1rem;
+        letter-spacing: 0.3px;
 
         &::placeholder {
             padding-left: 10px;
