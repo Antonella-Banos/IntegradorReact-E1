@@ -17,7 +17,7 @@ export const NotFoundContent = styled.div`
     margin-top: 3rem;
     padding: 0 1rem;
     h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-family: 'Pathway Gothic One', sans-serif;
         font-weight: 700;
         letter-spacing: 3px;
@@ -43,6 +43,17 @@ export const NotFoundContent = styled.div`
         flex-wrap: wrap;
     }
 
+`;
+
+export const MusicVideo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+
     h2 {
         font-size: 3.5rem;
         font-family: 'Pathway Gothic One', sans-serif;
@@ -55,21 +66,29 @@ export const NotFoundContent = styled.div`
         text-align: center;
         flex-wrap: wrap;
         text-transform: uppercase;
+        margin-bottom: 2.7rem;
     }
-`;
-
-export const MusicVideo = styled.div`
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.5rem;
-    padding: 0 1rem;
 
     iframe {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+        margin-bottom: 2rem;
 
-    
+        @media (max-width: 576px) {
+           width: 450px;
+           height: 300px;
+        }
+
+        @media (max-width: 470px) {
+            width: 310px;
+            height: 260px;
+        }
+    }
+`;
+
+export const ButtonContainer = styled.div`
+   display: flex;
+   justify-content: center;
+   margin-bottom: 3rem;
 `;
