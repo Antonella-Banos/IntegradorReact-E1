@@ -26,7 +26,7 @@ const Navbar = () => {
               <SlMenu/> 
             </MenuContainer>
 
-            <NavLinksWrapper className={state.isBurgerMenuOpen ? "open" : ""}> 
+            <NavLinksWrapper className={state.isBurgerMenuOpen ? "open" : "close"}> 
 
             <NavLinks to='/'>Home</NavLinks>
             <NavLinks to='/albumes'> Álbumes</NavLinks>

@@ -144,3 +144,19 @@ export const allAlbums = [
         category: "Mini Albums",
     },
 ];
+
+for (const obj of allAlbums) {
+    const entries = Object.entries(obj);
+
+    for (const [key, value] of entries) {
+        console.log(`Key:${key}, Value:${value}`);
+    };
+};
+
+allAlbums.forEach(obj2 => {
+    const entries2 = Object.entries(obj2);
+
+    entries2.forEach(([key, value]) => {
+        console.log(`Key:${key}, Value:${value}`);
+    });
+});

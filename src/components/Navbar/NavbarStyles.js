@@ -68,6 +68,7 @@ export const NavLinksWrapper = styled.ul`
     @media (max-width: 768px) {
 
         display: none;
+        transition: transform 2s ease-out;
 
         &.open {
             position: absolute;
@@ -81,8 +82,9 @@ export const NavLinksWrapper = styled.ul`
             align-items: center;
             padding: 20px;
             gap: 40px;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             display: flex;
+            transform: translateY(15px);
 
             @media (max-width: 576px) {
                 width: 50%;
@@ -100,6 +102,10 @@ export const NavLinksWrapper = styled.ul`
                 margin: 1rem 0;
                 padding: 20px 0;
             }
+        }
+
+        &.close {
+            transform: translateY(0);
         }
     }
 `;
