@@ -4,20 +4,17 @@ import { makeStyles } from '@mui/material';
 
 const useStyles = makeStyles((theme) => ({
     dialogContent: {
-      // Custom styles for DialogContent
       padding: theme.spacing(2),
       border: '2px solid #ef94bd',
       width: '300px',
     },
     dialogContentText: {
-      // Custom styles for DialogContentText
-      color: '#333',
+      color: '#ef94bd',
       fontSize: '1.2rem',
       fontFamily: 'Pathway Gothic One',
       textAlign: 'center',
     },
     button: {
-      // Custom styles for Button
       backgroundColor: '#ef94bd',
       color: '#fff',
       '&:hover': {
