@@ -41,6 +41,12 @@ export const ProductCard = styled.div`
     img {
         width: 100%;
         margin-bottom: 1rem;
+        transition: transform 0.4s ease;
+
+        &:hover {
+         transform: scale(0.97);
+         cursor: pointer;
+        }  
     }
     h2 {
         color: #fff;
