@@ -34,7 +34,7 @@ const FinishedOrderModal = ({ open, onClose, onAccept }) => {
     <Dialog open={open} onClose={onClose}>
       <DialogContent className={classes.dialogContent}>
         <DialogContentText className={classes.dialogContentText}>
-          Your message goes here...
+         ¿Desea finalizar su compra?
         </DialogContentText>
       </DialogContent>
       <DialogActions>
