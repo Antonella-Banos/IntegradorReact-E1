@@ -20,10 +20,6 @@ const AllAlbums = () => {
     // console.log(ob);
 
 
-
-
-
-
     return (
         <>
          <ProductsWrapper>

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { allAlbums } from "../../pages/Albumes/data/AllAlbums";
+import { allAlbums } from "../../data/AllAlbums";
 
 const INITIAL_STATE = {
     albumes: allAlbums,

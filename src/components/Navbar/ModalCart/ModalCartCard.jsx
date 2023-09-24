@@ -3,8 +3,7 @@ import Counter from "../../UI/Counter/Counter";
 import { AlbumPriceStyled, AlbumTextStyled, AlbumTitleStyled, ProductContainerStyled, QuantityContainerStyled, TextContainerStyled } from "./ModalCartStyles";
 
 import {BsPlusLg} from "react-icons/bs"
-// import {AiOutlineMinus} from "react-icons/ai"
-// import {BsTrash3Fill} from "react-icons/bs"
+import {AiOutlineMinus} from "react-icons/ai"
 
 
 const ModalCartCard = () => {
@@ -21,7 +20,7 @@ const ModalCartCard = () => {
 
        <QuantityContainerStyled>
          <CountButton color>
-
+          <AiOutlineMinus/>
          </CountButton>
 
          <Counter></Counter>
