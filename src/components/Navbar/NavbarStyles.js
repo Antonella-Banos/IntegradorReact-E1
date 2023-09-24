@@ -138,11 +138,6 @@ export const UserContainer = styled.div`
     color: ${(props) => (props.icon ? "#f7cac9" : "#ffdcdb")};   
     cursor: pointer;
     font-size: 25px;
-
-    &:hover {
-    transform: scale(1.1);
-    transition: all 0.7s;  
-    }
 `;
 
 export const CartContainer = styled.div`
@@ -152,7 +147,7 @@ export const CartContainer = styled.div`
     align-items: center;
 
     &:hover {
-    transform: scale(1.1);
+    transform: scale(0.95);
     transition: all 0.7s;  
     }
 `;

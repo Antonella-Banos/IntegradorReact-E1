@@ -42,10 +42,12 @@ export const ProductCard = styled.div`
         width: 100%;
         margin-bottom: 1rem;
         transition: transform 0.4s ease;
+        opacity: 1;
 
         &:hover {
          transform: scale(0.97);
          cursor: pointer;
+         opacity: 0.92;
         }  
     }
     h2 {
