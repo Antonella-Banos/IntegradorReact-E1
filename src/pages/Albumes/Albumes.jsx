@@ -7,23 +7,30 @@ import { CategoriesContainer, CategoriesWrapper } from '../Home/Categorias/Categ
 import Category from '../Home/Categorias/Category'
 // import { categories } from '../../data/Categories'
 import { AlbumsCardContainer } from './AlbumesStyles'
-import { filterAlbums } from '../../redux/albumes/albumesSlice'
-import { selectCategory } from '../../redux/categorias/categoriasSlice'
+import { selectCategory, clearCategoryFilter } from '../../redux/categorias/categoriasSlice'
 
 
 
 const AllAlbums = () => {
 
-    const {albumes, filteredAlbums} = useSelector((state) => state.albumes)
+    const {albumes} = useSelector((state) => state.albumes)
 
     const {categorias, selectedCategory} = useSelector((state) => state.categorias) 
 
     const dispatch = useDispatch()
 
-    const handleCategorySelect = (category) => {
-       dispatch(selectCategory(category));
-       dispatch(filterAlbums());
+    const handleCategoryClick = (category) => {
+      if (selectedCategory === category) {
+        dispatch(clearCategoryFilter());
+      } else {
+        dispatch(selectCategory(category));
+      }
     };
+
+    const filteredAlbums =
+    selectedCategory === null
+      ? albumes
+      : albumes.filter((album) => album.category === selectedCategory);
 
     return (
         <>
@@ -34,21 +41,18 @@ const AllAlbums = () => {
             <CategoriesContainer>
             {
                categorias.map((category) => {
-                  return <Category key={category.id} {...category} onClick={() => handleCategorySelect(category.category)}/>
+                  return <Category key={category.id} {...category} onClick={() => handleCategoryClick(category.category)}/>
             })
             }
             </CategoriesContainer>
            </CategoriesWrapper>
 
            <AlbumsCardContainer>
-              { selectedCategory
-              ? filteredAlbums.map((album) => {
-                return <AlbumCard key={album.id} {...album}/>
-              })
-              : albumes.map((album) => {
-                    return <AlbumCard key={album.id} {...album}/>
-                })
-              }
+           {
+              filteredAlbums.map((album) => {
+                  return <AlbumCard key={album.id} {...album} />;
+           })
+           }
            </AlbumsCardContainer>
         </ProductsWrapper>
         </>

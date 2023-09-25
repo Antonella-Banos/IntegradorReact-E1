@@ -12,19 +12,18 @@ export const albumesSlice = createSlice({
         getAlbums: state => {
             return state
         },
-        filterAlbums: (state, action)  => {
-            const { selectedCategory } = state.categorias;
-            const filteredAlbums = selectedCategory
-              ? state.albumes.filter((album) => album.category === selectedCategory)
-              : state.albumes;
-            return { ...state, filteredAlbums };
-        }    
+        clearCategoryFilter: (state) => {
+            return {
+              ...state,
+              selectedCategory: null,
+            };
+          },  
     }
 })
 
 export const {
     getAlbums, 
-    filterAlbums,
+    clearCategoryFilter,
 } = albumesSlice.actions
 
 
