@@ -53,6 +53,7 @@ export const ProductCard = styled.div`
     h2 {
         color: #fff;
         font-weight: 600;
+        font-family: 'Pathway Gothic One', sans-serif;
         font-size: 1.5rem;
         margin: 0.5rem;
     }
