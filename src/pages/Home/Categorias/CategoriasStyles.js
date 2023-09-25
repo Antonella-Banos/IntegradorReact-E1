@@ -35,19 +35,18 @@ export const CategoriesCard = styled(motion.div)`
     display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 200px;
+	width: 180px;
 	height: 15px;
 	border-radius: 1rem;
 	padding: 25px 10px;
 	gap: 10px;
-	background: ${({ selected }) =>
-     selected ? '#f7cac9' : 'linear-gradient(100deg, #92a8d1, #f7cac9)'};
+	background: ${({ selected }) => selected ? '#f7cac9' : 'linear-gradient(100deg, #92a8d1, #f7cac9)'};
     cursor: pointer;
 	&:hover {
 		opacity: 90%;
 	}
     p {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 		font-family: 'Pathway Gothic One', sans-serif;
 		color: #fff;
 	}

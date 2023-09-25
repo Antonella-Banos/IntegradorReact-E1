@@ -5,7 +5,6 @@ export const Button = ({
     children,
     radius = '25',
     disabled = false,
-    secondary,
     onClick = (e) => e.preventDefault(),
 }) => {
   return (
@@ -13,7 +12,6 @@ export const Button = ({
        whileTap={{scale: 0.90}}
        radius={radius}
        disabled={disabled} 
-       secondary={secondary}
        onClick={onClick}
     >
        {children}
