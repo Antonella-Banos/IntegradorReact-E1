@@ -11,10 +11,3 @@ export const AlbumsCardContainer = styled.div`
   gap: 40px;
 `;
 
-export const ButtonsContainerStyled = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-`;

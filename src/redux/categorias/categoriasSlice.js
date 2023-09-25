@@ -14,17 +14,13 @@ export const categoriasSlice = createSlice({
           return {
             ...state,
             selectedCategory: action.payload !== state.selectedCategory ? 
-            action.payload : null
+            action.payload : null,
           }
-        },
-        categorias: (state) => {
-            return state
         }
     }
 })
 
 export const {
-    categorias,
     selectCategory 
 } = categoriasSlice.actions
 
