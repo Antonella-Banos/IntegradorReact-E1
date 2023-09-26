@@ -17,12 +17,18 @@ export const categoriasSlice = createSlice({
             action.payload : null,
           };
         },
-        
+        clearCategoryFilter: (state) => {
+          return {
+            ...state,
+            selectedCategory: null,
+          };
+        },
     }
 })
 
 export const {
-    selectCategory 
+    selectCategory,
+    clearCategoryFilter, 
 } = categoriasSlice.actions
 
 
