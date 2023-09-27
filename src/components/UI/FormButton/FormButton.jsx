@@ -1,5 +1,5 @@
 import React from "react";
-import { FormButton } from "./FormButtonStyles";
+import { FormButtonStyled } from "./FormButtonStyles";
 
 export const FormButton = ({
     children,
@@ -8,14 +8,14 @@ export const FormButton = ({
     onClick = (e) => e.preventDefault(),
 }) => {
    return (
-    <FormButton
+    <FormButtonStyled
     whileTap={{scale: 0.90}}
     radius={radius}
     disabled={disabled}
     onClick={onClick}
     >
     {children}
-    </FormButton>
+    </FormButtonStyled>
    )
 }
 

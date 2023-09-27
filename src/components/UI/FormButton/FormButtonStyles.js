@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { motion } from "framer-motion";
 
-export const FormButton = styled(motion.button)`
+export const FormButtonStyled = styled(motion.button)`
     padding: 0.8rem 2rem;
 	outline: none;
 	border: none;
