@@ -17,7 +17,7 @@ const AllAlbums = () => {
 
     const {categorias, selectedCategory} = useSelector((state) => state.categorias) 
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch(); 
 
     const handleCategoryClick = (category) => {
       if (selectedCategory === category) {
@@ -41,7 +41,7 @@ const AllAlbums = () => {
             <CategoriesContainer>
             {
                categorias.map((category) => {
-                  return <Category key={category.id} {...category} onClick={() => handleCategoryClick(category.category)}/>
+                  return <Category key={category.id} {...category} onClick={() => handleCategoryClick(category)}/>
             })
             }
             </CategoriesContainer>
