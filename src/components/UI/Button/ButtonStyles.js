@@ -21,4 +21,7 @@ export const StyledButton = styled(motion.button)`
 		cursor: not-allowed;
 		opacity: 0.5;
 	}
+	&:focus {
+		border: none;
+	}
 `;

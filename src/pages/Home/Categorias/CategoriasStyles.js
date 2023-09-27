@@ -50,4 +50,7 @@ export const CategoriesCard = styled(motion.div)`
 		font-family: 'Pathway Gothic One', sans-serif;
 		color: #fff;
 	}
+	&:focus {
+		border: none;
+	}
 `;
