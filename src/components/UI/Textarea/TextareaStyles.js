@@ -30,13 +30,9 @@ export const Textarea = styled.textarea`
   font-size: 1.1rem;
   letter-spacing: 0.3px;
   padding: 10px 0 50px 0; 
-  
+  padding-left: 10px;
 
-  ::placeholder {
-            padding-left: 10px;
-        }
-
-  :focus {
+  &:focus {
             border: 2.5px solid #7ca1d5;
         }
 `;

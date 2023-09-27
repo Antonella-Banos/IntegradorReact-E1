@@ -34,7 +34,7 @@ export const ContactForm = styled.form`
     gap: 20px;
     padding: 20px;
 
-    & input {
+    /* & input {
         width: 100%;
         height: 35px;
         border-radius: 0.8rem;
@@ -73,7 +73,7 @@ export const ContactForm = styled.form`
         &:focus {
             border: 2.5px solid #7ca1d5;
         }
-    }
+    } */
 `;
 
 export const ContactFormButton = styled(FormButton)`

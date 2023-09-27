@@ -29,12 +29,9 @@ export const Input = styled.input`
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 1.1rem;
   letter-spacing: 0.3px;
+  padding-left: 10px;
 
-  ::placeholder {
-            padding-left: 10px;
-        }
-
-  :focus {
+  &:focus {
             border: 2.5px solid #7ca1d5;
         }
 `;
