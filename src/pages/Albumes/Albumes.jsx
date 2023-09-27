@@ -20,7 +20,7 @@ const AllAlbums = () => {
     const dispatch = useDispatch(); 
 
     const handleCategoryClick = (category) => {
-      if (selectedCategory === category) {
+      if (selectedCategory && selectedCategory.id === category.id) {
         dispatch(clearCategoryFilter());
       } else {
         dispatch(selectCategory(category));
