@@ -41,7 +41,10 @@ const AllAlbums = () => {
             <CategoriesContainer>
             {
                categorias.map((category) => {
-                  return <Category key={category.id} {...category} onClick={() => handleCategoryClick(category)}/>
+                  return <Category key={category.id} 
+                  {...category} 
+                  selected={category === selectedCategory} 
+                  onClick={() => handleCategoryClick(category)}/>
             })
             }
             </CategoriesContainer>

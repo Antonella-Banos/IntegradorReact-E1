@@ -15,7 +15,7 @@ function Contacto() {
                    <Input type='text' name='nombre' id='nombre' placeholder='Ingresar nombre'></Input>         
                    <Input type='text' name='apellido' id='apellido' placeholder='Ingresar apellido'></Input>
                    <Input type='email' name='email' id='email' placeholder='Ingresar email'></Input>
-                   <Textarea name='asunto' id='asunto' placeholder='Deje su mensaje'></Textarea> 
+                   <Textarea name='asunto' id='asunto' placeholder='Dejar un mensaje'></Textarea> 
                 </ContactForm>
 
                 <ContactFormButton type='submit' radius='18'>Enviar</ContactFormButton>
