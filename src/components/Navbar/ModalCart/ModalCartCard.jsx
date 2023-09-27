@@ -10,8 +10,8 @@ const ModalCartCard = () => {
   return (
     <ProductContainerStyled>
         <img 
-        src="" 
-        alt="" />
+        src="https://pledis.co.kr/_data/file/bbsData/d53b65d4bc5928fe1674c6d504d2d9bd.png" 
+        alt="album" />
        <TextContainerStyled>
          <AlbumTitleStyled></AlbumTitleStyled>
          <AlbumTextStyled></AlbumTextStyled>

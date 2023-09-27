@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const ModalContainerStyled = styled(motion.div)`
+export const ModalContainerStyled = styled.div`
+ 
+  &.open {
   position: fixed;
   top: 0;
   right: 0;
@@ -14,7 +16,14 @@ export const ModalContainerStyled = styled(motion.div)`
   height: calc(100vh - 5rem);
   padding: 2.5rem;
   background-color: #7ca1d5;
-  
+  transform: translate(200%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+  }
+
+  &.close {
+    transform: translate(0%);
+    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+  }
 `;
 
 export const CloseButtonContainer = styled.div`
@@ -67,7 +76,7 @@ export const ProductContainerStyled = styled.div`
   border-radius: 1rem;
   padding: 1rem;
   background: #7ca1d5;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+  border: 1.5px solid linear-gradient(100deg, #92a8d1, #f7cac9);
 
   & img {
     height: 80px;

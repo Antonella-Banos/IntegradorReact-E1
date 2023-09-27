@@ -8,7 +8,7 @@ const ModalCartContainer = () => {
     <ModalContainerStyled>
 
         <CloseButtonContainer>
-          <CloseButtonStyled>
+          <CloseButtonStyled whileTap={{scale: 0.90}}>
             <AiOutlineClose/>
           </CloseButtonStyled>
         </CloseButtonContainer>
