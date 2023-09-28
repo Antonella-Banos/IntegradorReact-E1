@@ -6,7 +6,6 @@ export const NavbarWrapper = styled.header`
     width: 100%;
     position: fixed;
     z-index: 2;
-    margin: none;
 `;
 
 export const NavbarContainerStyled = styled.nav`
