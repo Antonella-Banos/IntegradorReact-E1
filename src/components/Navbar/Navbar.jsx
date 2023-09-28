@@ -13,6 +13,10 @@ import Cart from './Cart/Cart'
 const Navbar = () => {
   
   const {state, dispatch} = useContext(Contexto);
+
+  const handleMenuClick = () => {
+    dispatch({ type: 'openBurgerMenu' });
+  };
   
   return (
 
@@ -22,7 +26,7 @@ const Navbar = () => {
         <img src="https://s3-ap-northeast-1.amazonaws.com/pf-web/fanclubs/15/assets/17/images/ofs_menu.png" alt="Logo" /> 
 
           <MenuStyled>
-            <MenuContainer icon onClick={() => dispatch({ type: "openBurgerMenu" })}> 
+            <MenuContainer icon onClick={handleMenuClick}> 
               <SlMenu/> 
             </MenuContainer>
 

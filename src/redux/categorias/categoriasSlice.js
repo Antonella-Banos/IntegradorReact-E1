@@ -10,6 +10,9 @@ export const categoriasSlice = createSlice({
     name: "categorias",
     initialState: INITIAL_STATE,
     reducers: {
+        getCategories: state => {
+          return state
+        },
         selectCategory : (state, action) => {
           return {
             ...state,
@@ -27,6 +30,7 @@ export const categoriasSlice = createSlice({
 })
 
 export const {
+    getCategories,
     selectCategory,
     clearCategoryFilter, 
 } = categoriasSlice.actions
