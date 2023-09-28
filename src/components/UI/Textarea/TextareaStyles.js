@@ -19,7 +19,7 @@ export const TextareaLabel = styled.label`
 `;
 
 export const Textarea = styled.textarea`
-  width: 100%;
+  width: 95%;
   height: 35px;
   border-radius: 0.8rem;
   border: ${({ isError }) => (isError ? '2.5px solid linear-gradient(100deg, #92a8d1, #f7cac9)' : 'none')};

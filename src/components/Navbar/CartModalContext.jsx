@@ -14,6 +14,11 @@ const ModalCart = ({children}) => {
                     ...state,
                     isModalCartOpen: !state.isModalCartOpen,
                 };
+                case "closeModalCart": 
+                return {
+                    ...state,
+                    isModalCartOpen: false,
+                };    
             default:
                 return state; 
 
@@ -21,6 +26,21 @@ const ModalCart = ({children}) => {
     }
 
     const [state, dispatch] = useReducer(contextReducer, initialState)
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+          const isClickInsideModalCart = event.target.closest(".modal-cart");
+          if (!isClickInsideModalCart) {
+            dispatch({ type: "closeModalCart" });
+          }
+        }; 
+
+        document.addEventListener("click", handleOutsideClick);
+
+        return () => {
+        document.removeEventListener("click", handleOutsideClick);
+      };
+      }, []);
 
     return(
      <Contexto.Provider value={{state, dispatch}}>

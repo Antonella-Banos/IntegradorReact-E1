@@ -19,7 +19,7 @@ export const InputLabel = styled.label`
 `;
 
 export const Input = styled.input`
-  width: 100%;
+  width: 95%;
   height: 35px;
   border-radius: 0.8rem;
   border: ${({ isError }) => (isError ? '2.5px solid linear-gradient(100deg, #92a8d1, #f7cac9)' : 'none')};
