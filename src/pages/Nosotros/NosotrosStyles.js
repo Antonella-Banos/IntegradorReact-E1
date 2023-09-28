@@ -131,7 +131,7 @@ export const SocialMediaContainer = styled.div`
     margin-bottom: 4rem;
     align-items: baseline;
 
-    @media (max-width: 470px) {
+    @media (max-width: 500px) {
 		flex-direction: column;
         align-items: center;
 	}
