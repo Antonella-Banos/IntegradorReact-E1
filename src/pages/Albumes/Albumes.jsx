@@ -30,7 +30,7 @@ const AllAlbums = () => {
     const filteredAlbums =
     selectedCategory === null
       ? albumes
-      : albumes.filter((album) => album.category === selectedCategory);
+      : albumes.filter((album) => album.category === selectedCategory.category);
 
     return (
         <>
