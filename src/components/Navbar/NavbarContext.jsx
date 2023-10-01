@@ -8,16 +8,18 @@ export const useNavbarContext = () => useContext(NavbarContext);
 export const NavbarProvider = ({ children }) => {
     const [burgerMenuClass, setBurgerMenuClass] = useState('close');
     const [cartClass, setCartClass] = useState('close'); 
+    const [modalCartClass, setModalCartClass] = useState('close');
 
 
     const closeNavbar = () => {
         setBurgerMenuClass('close');
         setCartClass('close'); 
+        setModalCartClass('close');
     }
 
     useEffect(() => {
         const handleClickOutside = () => {
-            if (burgerMenuClass === 'open' || cartClass === 'open') {
+            if (burgerMenuClass === 'open' || cartClass === 'open' || modalCartClass === 'open') {
                 closeNavbar();
             }
         };
@@ -27,10 +29,10 @@ export const NavbarProvider = ({ children }) => {
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
-    }, [burgerMenuClass, cartClass]);
+    }, [burgerMenuClass, cartClass, modalCartClass]);
 
     return (
-        <NavbarContext.Provider value={{ burgerMenuClass, cartClass, setBurgerMenuClass, setCartClass, closeNavbar}}>
+        <NavbarContext.Provider value={{ burgerMenuClass, cartClass, modalCartClass, setBurgerMenuClass, setCartClass, setModalCartClass, closeNavbar}}>
           {children} 
         </NavbarContext.Provider>
     ); 

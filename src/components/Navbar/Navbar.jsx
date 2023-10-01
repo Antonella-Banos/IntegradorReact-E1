@@ -2,20 +2,25 @@ import React from 'react'
 import { CartBubble, MenuContainer, MenuStyled, NavLinks, NavLinksWrapper, NavbarContainerStyled, NavbarWrapper, UserContainer, UserYCartContainer } from './NavbarStyles'
 
 import { useContext } from "react" 
-import { Contexto } from './BurgerMenuContext'
-
+import { NavbarContext } from './NavbarContext'
 import {FaUser} from "react-icons/fa"
-// import {FaShoppingCart} from "react-icons/fa"
 import {SlMenu} from "react-icons/sl"
 import Cart from './Cart/Cart'
+import ModalCart from './ModalCart/ModalCart'
 
 
 const Navbar = () => {
   
-  const {state, dispatch} = useContext(Contexto);
+  const {state, dispatch, setModalCartClass, closeNavbar} = useContext(NavbarContext);
 
   const handleMenuClick = () => {
     dispatch({ type: 'openBurgerMenu' });
+    setModalCartClass('close'); // cierra el modal del carrito al abrir el menú
+  };
+
+  const handleCartClick = () => {
+    dispatch({ type: 'closeBurgerMenu' }); // cierra el menú hamburguesa al abrir el carrito
+    setModalCartClass(state.cartClass === 'open' ? 'close' : 'open'); // toggle modal del carrito
   };
   
   return (
@@ -30,7 +35,7 @@ const Navbar = () => {
               <SlMenu/> 
             </MenuContainer>
 
-            <NavLinksWrapper className={state.isBurgerMenuOpen ? "open" : "close"}> 
+            <NavLinksWrapper className={state.burgerMenuClass}> 
 
             <NavLinks to='/'>Home</NavLinks>
             <NavLinks to='/albumes'> Álbumes</NavLinks>
@@ -45,9 +50,11 @@ const Navbar = () => {
                  <FaUser/>
                 </UserContainer>
 
-                <CartBubble>
-                 <Cart/>
+                <CartBubble onClick={handleCartClick}>
+                 <Cart /> 
                 </CartBubble>
+
+                <ModalCart/>
 
             </UserYCartContainer>
 
