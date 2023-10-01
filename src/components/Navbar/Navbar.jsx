@@ -11,7 +11,7 @@ import ModalCart from './ModalCart/ModalCart'
 
 const Navbar = () => {
   
-  const {state, dispatch, setModalCartClass, closeNavbar} = useContext(NavbarContext);
+  const {state, dispatch, setModalCartClass} = useContext(NavbarContext);
 
   const handleMenuClick = () => {
     dispatch({ type: 'openBurgerMenu' });

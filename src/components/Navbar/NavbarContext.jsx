@@ -3,9 +3,9 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 const NavbarContext = createContext();
 
-export const useNavbarContext = () => useContext(NavbarContext);
+const useNavbarContext = () => useContext(NavbarContext);
 
-export const NavbarProvider = ({ children }) => {
+const NavbarProvider = ({ children }) => {
     const [burgerMenuClass, setBurgerMenuClass] = useState('close');
     const [cartClass, setCartClass] = useState('close'); 
     const [modalCartClass, setModalCartClass] = useState('close');
