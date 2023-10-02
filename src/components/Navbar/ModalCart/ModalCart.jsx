@@ -1,6 +1,6 @@
 import Button from "../../UI/Button/Button";
 import ModalCartCard from "./ModalCartCard";
-import { CloseButtonStyled, ModalContainerStyled, Divider, MainProductContainer, ProductsWrapperStyled, TotalPriceContainer } from "./ModalCartStyles";
+import { CloseButtonStyled, ModalContainerStyled, Divider, MainProductContainer, ProductsWrapperStyled, TotalPriceContainer, CloseButtonContainer } from "./ModalCartStyles";
 import {AiOutlineClose} from "react-icons/ai"
 
 

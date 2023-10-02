@@ -9,4 +9,5 @@ export const CounterStyled = styled.span`
     font-family: 'Pathway Gothic One', sans-serif;
     text-align: center;
     letter-spacing: 0.3px;
+    color: #fff;
 `;

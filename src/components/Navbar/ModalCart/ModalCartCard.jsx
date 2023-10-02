@@ -19,14 +19,14 @@ const ModalCartCard = () => {
        </TextContainerStyled>
 
        <QuantityContainerStyled>
-         <CountButton color>
-          <AiOutlineMinus/>
+         <CountButton button>
+          <AiOutlineMinus style={{fontSize: "1.2rem"}}/>
          </CountButton>
 
-         <Counter></Counter>
+         <Counter>0</Counter>
 
          <CountButton>
-           <BsPlusLg/>
+           <BsPlusLg style={{fontSize: "1.2rem"}}/>
          </CountButton>
        </QuantityContainerStyled>
     </ProductContainerStyled>

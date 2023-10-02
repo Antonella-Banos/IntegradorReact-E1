@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const ModalContainerStyled = styled.div`
- 
-  &.open {
+export const ModalContainerStyled = styled(motion.div)`
   position: fixed;
   top: 0;
   right: 0;
@@ -12,18 +10,10 @@ export const ModalContainerStyled = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  width: 480px;
-  height: calc(100vh - 5rem);
-  padding: 2.5rem;
+  width: 400px;
+  height: calc(100vh - 4rem);
+  padding: 2rem;
   background-color: #7ca1d5;
-  transform: translate(200%);
-  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-  }
-
-  &.close {
-    transform: translate(0%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-  }
 `;
 
 export const CloseButtonContainer = styled.div`
@@ -33,13 +23,14 @@ export const CloseButtonContainer = styled.div`
 export const CloseButtonStyled = styled(motion.button)`
   display: flex;
   justify-items: center;
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
   border: none;
-  border-radius: 0.8rem;
+  border-radius: 0.3rem;
   background: linear-gradient(100deg, #92a8d1, #f7cac9);
   color: #fff;
   cursor: pointer;
+  align-items: center;
 `;
 
 export const MainProductContainer = styled.div`
@@ -76,13 +67,12 @@ export const ProductContainerStyled = styled.div`
   border-radius: 1rem;
   padding: 1rem;
   background: #7ca1d5;
-  border: 1.5px solid linear-gradient(100deg, #92a8d1, #f7cac9);
 
   & img {
     height: 80px;
     width: 80px;
     object-fit: cover;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
   }
 `;
 
@@ -130,15 +120,16 @@ export const TotalPriceContainer = styled.div`
 
   & p {
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: #fff;
   }
 
   & span {
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: #fff;
+    margin-top: 1.5rem;
   }
 `;
