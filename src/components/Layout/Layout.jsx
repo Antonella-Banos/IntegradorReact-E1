@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-import { NavbarContext } from '../Navbar/NavbarContext';
+import { BurgerMenu } from '../Navbar/BurgerMenuContext';
 
 const LayoutWrapper = styled.main`
   width: 100%;
@@ -15,9 +15,9 @@ const LayoutWrapper = styled.main`
 function Layout({children}) {
   return (
     <LayoutWrapper>
-        <NavbarContext>
+        <BurgerMenu>
           <Navbar/>
-        </NavbarContext>
+        </BurgerMenu>
         {children}
         <Footer/>
     </LayoutWrapper>

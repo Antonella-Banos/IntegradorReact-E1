@@ -110,7 +110,7 @@ export const AlbumTextStyled = styled.p`
   letter-spacing: 0.3px;
 `;
 
-export const AlbumPriceStyled = styled(TextStyled)``;
+export const AlbumPriceStyled = styled(AlbumTextStyled)``;
 
 export const QuantityContainerStyled = styled.div`
   display: flex;
