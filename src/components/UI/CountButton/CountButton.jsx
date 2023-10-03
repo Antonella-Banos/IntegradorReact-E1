@@ -7,7 +7,7 @@ const CountButton = ({
 }) => {
    return (
     <CountButtonStyled
-     whileTap={{scale: 0.95}}
+     whileTap={{scale: 0.90}}
      disabled={disabled}
      onClick={onClick}
     >

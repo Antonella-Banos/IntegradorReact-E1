@@ -10,10 +10,11 @@ export const ModalContainerStyled = styled(motion.div)`
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  width: 400px;
+  width: 420px;
   height: calc(100vh - 4rem);
   padding: 2rem;
   background-color: #7ca1d5;
+
 `;
 
 export const CloseButtonContainer = styled.div`
@@ -31,6 +32,20 @@ export const CloseButtonStyled = styled(motion.button)`
   color: #fff;
   cursor: pointer;
   align-items: center;
+`;
+
+export const MainTitleStyled = styled.div`
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+  & h2 {
+    margin-top: 0;
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 400;
+  };
 `;
 
 export const MainProductContainer = styled.div`
@@ -110,7 +125,7 @@ export const QuantityContainerStyled = styled.div`
 export const Divider = styled.span`
   border: 0.3px solid #fff;
   width: 100%;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 `;
 
 export const TotalPriceContainer = styled.div`
@@ -121,14 +136,14 @@ export const TotalPriceContainer = styled.div`
   & p {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
   }
 
   & span {
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     color: #fff;
     margin-top: 1.5rem;
   }

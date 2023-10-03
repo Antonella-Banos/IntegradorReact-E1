@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 
 export const NavbarWrapper = styled.header`
@@ -32,6 +32,20 @@ export const NavbarContainerStyled = styled.nav`
             height: 75px;
         }
     }
+`;
+
+export const InvisibleScreen = styled.div`
+    z-index: 40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(420px - 100vh);
+
+    ${({ isHidden }) =>
+    !isHidden &&
+    css`
+      background-color: none;
+    `}
 `;
 
 export const MenuStyled = styled.div`
