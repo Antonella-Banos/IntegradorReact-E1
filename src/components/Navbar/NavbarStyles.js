@@ -41,8 +41,8 @@ export const InvisibleScreen = styled.div`
     left: 0;
     width: calc(420px - 100vh);
 
-    ${({ isHidden }) =>
-    !isHidden &&
+    ${({ isClosed }) =>
+    !isClosed &&
     css`
       background-color: none;
     `}
