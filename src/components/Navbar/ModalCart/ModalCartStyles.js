@@ -14,7 +14,6 @@ export const ModalContainerStyled = styled(motion.div)`
   height: calc(100vh - 4rem);
   padding: 2rem;
   background-color: #7ca1d5;
-
 `;
 
 export const CloseButtonContainer = styled.div`
@@ -78,10 +77,11 @@ export const ProductContainerStyled = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 1.2rem;
-  width: 380px;
+  width: 370px;
   border-radius: 1rem;
   padding: 1rem;
   background: #7ca1d5;
+  border: 2px solid #f7cac9;
 
   & img {
     height: 80px;
@@ -122,10 +122,10 @@ export const QuantityContainerStyled = styled.div`
   align-items: center;
 `;
 
-export const Divider = styled.span`
+export const Divider = styled.hr`
   border: 0.3px solid #fff;
   width: 100%;
-  margin-top: 2.5rem;
+  margin-top: 13rem;
 `;
 
 export const TotalPriceContainer = styled.div`

@@ -1,7 +1,8 @@
 import {createSlice} from "@reduxjs/toolkit"
+import { addAlbumToCart, removeAlbumFromCart } from "./funciones-del-carrito"
 
 const INITIAL_STATE = {
-    cartItem: [],
+    cartItems: [],
     closed: true
 }
 
@@ -16,11 +17,32 @@ const carritoSlice = createSlice({
                 closed: !state.closed
             }
         },
+        agregarAlCarrito: (state, action) => {
+            return {
+                ...state,
+                cartItems: addAlbumToCart(state.cartItems, action.payload)
+            }
+        },
+        removerDelCarrito: (state, action) => {
+            return {
+                ...state,
+                cartItems: removeAlbumFromCart(state.cartItems, action.payload)
+            }
+        },
+        vaciarCarrito: (state) => {
+            return {
+                ...state,
+                cartItems: []
+            }
+        }
     }
 })
 
 export const {
-    cartToggle
+    cartToggle,
+    agregarAlCarrito,
+    removerDelCarrito,
+    vaciarCarrito
 } = carritoSlice.actions
 
 export default carritoSlice.reducer
