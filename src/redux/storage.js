@@ -6,11 +6,13 @@ import storage from "redux-persist/lib/storage"
 import categoriesReducer from "./categorias/categoriasSlice"
 import albumesReducer from "./albumes/albumesSlice"
 import destacadosReducer from "./destacados/destacadosSlice"
+import carritoReducer from "./carrito/carritoSlice"
 
 const reducers = combineReducers({
     categorias: categoriesReducer,
     albumes: albumesReducer,
     destacados: destacadosReducer,
+    carrito: carritoReducer,
 });
 
 const persistConfig = {
