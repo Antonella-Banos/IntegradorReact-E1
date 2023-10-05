@@ -60,7 +60,6 @@ const ModalCart = () => {
                 <p>¿No querés comprar un álbum?</p>
               )
             }
-
             
           </ProductsWrapperStyled>
         </MainProductContainer>

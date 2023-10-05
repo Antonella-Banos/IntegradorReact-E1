@@ -3,7 +3,7 @@ import { addAlbumToCart, removeAlbumFromCart } from "./funciones-del-carrito"
 
 const INITIAL_STATE = {
     cartItems: [],
-    closed: true
+    closed: true,
 }
 
 
@@ -20,13 +20,13 @@ const carritoSlice = createSlice({
         agregarAlCarrito: (state, action) => {
             return {
                 ...state,
-                cartItems: addAlbumToCart(state.cartItems, action.payload)
+                cartItems: addAlbumToCart(state.cartItems,action.payload)
             }
         },
         removerDelCarrito: (state, action) => {
             return {
                 ...state,
-                cartItems: removeAlbumFromCart(state.cartItems, action.payload)
+                cartItems: removeAlbumFromCart(state.cartItems,action.payload)
             }
         },
         vaciarCarrito: (state) => {
@@ -34,7 +34,7 @@ const carritoSlice = createSlice({
                 ...state,
                 cartItems: []
             }
-        }
+        },
     }
 })
 

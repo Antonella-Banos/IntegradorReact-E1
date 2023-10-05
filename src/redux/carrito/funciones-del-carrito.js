@@ -31,11 +31,11 @@ export const removeAlbumFromCart = (cartItems, id) => {
            return item.id === albumToRemove.id 
            ? {
               ...item,
-              quantity: item.quantity - 1
+              quantity: item.quantity - 1,
              }
            : item
-       })
+       });
     } else {
-      cartItems.filter((item) => item.id !== albumToRemove.id)
+      return cartItems.filter((item) => item.id !== albumToRemove.id)
     }
 }
