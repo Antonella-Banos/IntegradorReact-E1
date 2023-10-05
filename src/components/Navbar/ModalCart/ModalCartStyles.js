@@ -70,6 +70,12 @@ export const ProductsWrapperStyled = styled.div`
   &::-webkit-scrollbar:horizontal {
     display: none;
   }
+
+  p {
+    color: #fff;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1.5rem;
+  }
 `;
 
 export const ProductContainerStyled = styled.div`
@@ -111,7 +117,7 @@ export const AlbumTextStyled = styled.p`
   margin: 0;
   color: #fff;
   font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 0.8rem;
+  font-size: 5px;
   letter-spacing: 0.3px;
 `;
 

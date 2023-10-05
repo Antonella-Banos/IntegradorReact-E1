@@ -1,8 +1,13 @@
 import React from 'react'
 import { ProductCard } from './ProductsCardStyles'
 import { Button } from "../../../components/UI/Button/Button"
+import { useDispatch } from "react-redux"
+import { agregarAlCarrito } from '../../../redux/carrito/carritoSlice'
 
-export const AlbumCard = ({img, title, release, price, category}) => {
+export const AlbumCard = ({img, title, release, price, category, id}) => {
+
+  const dispatch = useDispatch();
+
   return (
     <ProductCard>
         <img src={img} alt={category} />
@@ -13,7 +18,7 @@ export const AlbumCard = ({img, title, release, price, category}) => {
         <p>${price}</p>
         <Button 
         radius='18'
-        onClick={(e) => e.preventDefault()}
+        onClick={() => dispatch(agregarAlCarrito({img, title, release, price, category, id}))}
         >Comprar</Button>
     </ProductCard>
   )
