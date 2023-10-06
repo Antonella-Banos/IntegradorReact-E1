@@ -51,7 +51,7 @@ const ModalCart = () => {
           </MainTitleStyled>
 
           <ProductsWrapperStyled>
-            {
+            {/* {
               cartItems.length ? (
                 cartItems.map((item) => {
                    return <ModalCartCard key={item.id} {...item}/>
@@ -59,7 +59,7 @@ const ModalCart = () => {
               ) : (
                 <p>¿No querés comprar un álbum?</p>
               )
-            }
+            } */}
             
           </ProductsWrapperStyled>
         </MainProductContainer>

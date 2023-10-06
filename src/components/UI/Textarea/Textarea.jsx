@@ -3,22 +3,34 @@ import { ErrorMessage, Field } from "formik";
 import { StyledErrorMessage, TextareaContainer, TextareaLabel } from "./TextareaStyles";
 
 
-export const Textarea = () => {
+export const Textarea = ({ children, type, id, placeholder, name }) => {
     return (
-        <Field>
+        <Field name={name}>
 
-        <TextareaContainer>
-           <TextareaLabel></TextareaLabel>
-              <Textarea></Textarea>
+          {
+            ({field, form: {errors, touched}}) => (
+
+          <TextareaContainer>
+           <TextareaLabel>{children}</TextareaLabel>
+              <Textarea
+               type={type}
+               id={id}
+               placeholder={placeholder}
+               {...field}
+               isError={errors[field.name] && touched[field.name]}
+              />
              
-              <ErrorMessage>
-                <StyledErrorMessage>
-
-                </StyledErrorMessage> 
-
+              <ErrorMessage name={field.name}>
+                {
+                  (message) => <StyledErrorMessage>{message}</StyledErrorMessage> 
+                }
               </ErrorMessage>
               
-        </TextareaContainer>
+          </TextareaContainer>
+            )
+          }
+
+        
 
         </Field>
     );

@@ -14,6 +14,12 @@ export const ModalContainerStyled = styled(motion.div)`
   height: calc(100vh - 4rem);
   padding: 2rem;
   background-color: #7ca1d5;
+  overflow-y: scroll;
+  overflow-x: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const CloseButtonContainer = styled.div`

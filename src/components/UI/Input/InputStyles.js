@@ -4,8 +4,8 @@ export const InputContainer = styled.div`
   display: flex;
   margin: 1rem 0;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 50%;
 `;
 
@@ -13,8 +13,8 @@ export const InputLabel = styled.label`
   display: flex;
   margin: 1rem 0;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   width: 50%;
 `;
 
@@ -30,6 +30,8 @@ export const Input = styled.input`
   font-size: 1.1rem;
   letter-spacing: 0.3px;
   padding-left: 10px;
+  align-items: center;
+  justify-content: center;
 
   &:focus {
             border: 2.5px solid #7ca1d5;

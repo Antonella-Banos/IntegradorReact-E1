@@ -11,12 +11,6 @@ const carritoSlice = createSlice({
     name: 'carrito',
     initialState: INITIAL_STATE,
     reducers: {
-        cartToggle: (state) => {
-            return {
-                ...state,
-                closed: !state.closed
-            }
-        },
         agregarAlCarrito: (state, action) => {
             return {
                 ...state,
@@ -35,6 +29,12 @@ const carritoSlice = createSlice({
                 cartItems: []
             }
         },
+        cartToggle: (state) => {
+            return {
+                ...state,
+                closed: !state.closed
+            }
+        }
     }
 })
 

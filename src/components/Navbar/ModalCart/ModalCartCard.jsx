@@ -5,12 +5,12 @@ import { AlbumPriceStyled, AlbumTextStyled, AlbumTitleStyled, ProductContainerSt
 import {BsPlusLg} from "react-icons/bs"
 import {AiOutlineMinus} from "react-icons/ai"
 import { useDispatch } from "react-redux";
-import { agregarAlCarrito, removerDelCarrito } from "../../../redux/carrito/carritoSlice";
+// import { agregarAlCarrito, removerDelCarrito } from "../../../redux/carrito/carritoSlice";
 
 
 const ModalCartCard = ({img, title, release, price, category, quantity, id}) => {
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   return (
     <ProductContainerStyled>
@@ -26,7 +26,7 @@ const ModalCartCard = ({img, title, release, price, category, quantity, id}) => 
        <QuantityContainerStyled>
          <CountButton 
          button
-         onClick={() => dispatch(removerDelCarrito(id))}
+        //  onClick={() => dispatch(removerDelCarrito(id))}
          >
           <AiOutlineMinus style={{fontSize: "1.2rem"}}/>
          </CountButton>
@@ -34,7 +34,7 @@ const ModalCartCard = ({img, title, release, price, category, quantity, id}) => 
          <Counter>{quantity}</Counter>
 
          <CountButton
-         onClick={() => dispatch(agregarAlCarrito({img, title, release, price, category, quantity, id}))}
+        //  onClick={() => dispatch(agregarAlCarrito({img, title, release, price, category, quantity, id}))}
          >
            <BsPlusLg style={{fontSize: "1.2rem"}}/>
          </CountButton>
