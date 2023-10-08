@@ -7,8 +7,8 @@ export const CountButtonStyled = styled(motion.button)`
     justify-content: center;
     width: 35px;
     height: 35px;
-    background: ${(props) => (props.button ? "#f7cac9" : "linear-gradient(100deg, #92a8d1, #f7cac9)")};
-    border: none;
+    background: linear-gradient(100deg, #92a8d1, #f7cac9);
+    border: 0.1px solid #f7cac9;
     border-radius: 0.5rem;
     font-size: 0.8rem;
     font-weight: 800;

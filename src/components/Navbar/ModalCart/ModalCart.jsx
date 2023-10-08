@@ -16,6 +16,10 @@ const ModalCart = () => {
 
    const closedCart = useSelector((state) => state.carrito.closed)
 
+   const precioTotal = cartItems.reduce((acc, item) => {
+      return (acc += item.price * item.quantity)
+    }, 0);
+
    return (
     <>
      {!closedCart && (
@@ -67,7 +71,7 @@ const ModalCart = () => {
         <Divider/>
         <TotalPriceContainer>
           <p>Total:</p>
-          <span>0</span>
+          <span>${precioTotal}</span>
         </TotalPriceContainer>
 
         <Button 
@@ -78,7 +82,7 @@ const ModalCart = () => {
         <Button
         radius='18'
         onClick={() => dispatch(vaciarCarrito())}
-        disabled={true}
+        disabled={!cartItems.length}
         >
         <BiSolidTrashAlt/>
         </Button>
