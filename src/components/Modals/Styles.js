@@ -25,6 +25,8 @@ export const ModalMessageText = styled.h2`
   text-align: center;
 `;
 
-export const ModalButtonsContainer = styled.div``;
-
-export const ModalButtons = styled(motion.button)``;
+export const ModalButtonsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+`;

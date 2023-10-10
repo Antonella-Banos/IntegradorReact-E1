@@ -1,28 +1,28 @@
 import React from 'react';
-import { Dialog, DialogActions, DialogContent, DialogContentText, Button } from '@mui/material';
-import useStyles from './useStyles';
+import { ConfirmationModalContainer, ModalButtonsContainer, ModalMessageText } from './Styles';
+import ModalButton from '../UI/ModalButton/ModalButton';
 
 
-const AddToCartModal = ({ open, onClose, onAccept }) => {
-
-  const classes = useStyles();
+const AddToCartModal = () => {
 
   return (
-    <Dialog open={open} onClose={onClose}>
-      <DialogContent className={classes.dialogContent}>
-        <DialogContentText className={classes.dialogContentText}>
-          ¿Desea agregar este álbum al carrito?
-        </DialogContentText>
-      </DialogContent>
-      <DialogActions>
-        <Button onClick={onAccept} className={classes.button}>
-          Aceptar 
-        </Button>
-        <Button onClick={onClose} className={classes.button}>
-          Cancelar
-        </Button>
-      </DialogActions>
-    </Dialog>
+    <ConfirmationModalContainer>
+
+       <ModalMessageText>
+        ¿Desea agregar este álbum al carrito?
+       </ModalMessageText>
+
+       <ModalButtonsContainer>
+           <ModalButton>
+            Aceptar
+           </ModalButton>
+           
+           <ModalButton>
+            Cancelar 
+           </ModalButton>
+       </ModalButtonsContainer>
+
+    </ConfirmationModalContainer>
   );
 };
 

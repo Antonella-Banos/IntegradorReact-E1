@@ -1,28 +1,28 @@
 import React from 'react';
-import { Dialog, DialogActions, DialogContent, DialogContentText, Button } from '@mui/material';
-import useStyles from './useStyles';
+import { ConfirmationModalContainer, ModalButtonsContainer, ModalMessageText } from './Styles';
+import ModalButton from '../UI/ModalButton/ModalButton';
 
 
-const FinishedOrderModal = ({ open, onClose, onAccept }) => {
-
-  const classes = useStyles();
+const FinishedOrderModal = () => {
 
   return (
-    <Dialog open={open} onClose={onClose}>
-      <DialogContent className={classes.dialogContent}>
-        <DialogContentText className={classes.dialogContentText}>
-         ¿Desea finalizar su compra?
-        </DialogContentText>
-      </DialogContent>
-      <DialogActions>
-        <Button onClick={onAccept} className={classes.button}>
-          Aceptar
-        </Button>
-        <Button onClick={onClose} className={classes.button}>
-          Cancelar
-        </Button>
-      </DialogActions>
-    </Dialog>
+    <ConfirmationModalContainer>
+
+    <ModalMessageText>
+     ¿Desea finalizar su compra?
+    </ModalMessageText>
+
+    <ModalButtonsContainer>
+        <ModalButton>
+         Aceptar
+        </ModalButton>
+        
+        <ModalButton>
+         Cancelar 
+        </ModalButton>
+    </ModalButtonsContainer>
+
+ </ConfirmationModalContainer>
   );
 };
 

@@ -1,20 +1,25 @@
-// import { useState } from 'react';
 import React from 'react';
-import { Dialog, DialogContent } from '@mui/material';
-import useStyles from '../Modals/useStyles';
+import { ConfirmationModalContainer, ModalButtonsContainer, ModalMessageText } from '../Modals/Styles';
+import ModalButton from '../UI/ModalButton/ModalButton';
 
-  //Agregar {open} adentro de SuccessDialog 
-  function SuccessDialog() {
-    const classes = useStyles();
-  
+
+  const SuccessfulDataModal = () => {
+
     return (
-      <Dialog open={true}>
-        <DialogContent className={classes.dialogContent}>
-          <p>Datos enviados correctamente</p>
-        </DialogContent>
-      </Dialog>
+      <ConfirmationModalContainer>
+
+         <ModalMessageText>
+          Datos cargados correctamente
+         </ModalMessageText>
+
+         <ModalButtonsContainer>
+           <ModalButton>
+            Cerrar
+           </ModalButton>
+         </ModalButtonsContainer>
+      </ConfirmationModalContainer>
     );
   }
 
-  export default SuccessDialog;
+  export default SuccessfulDataModal;
 
