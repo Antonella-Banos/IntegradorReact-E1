@@ -3,13 +3,13 @@ import styled from "styled-components"
 
 
 export const ConfirmationModalContainer = styled.div`
-  z-index: 100;
+  z-index: 1000;
   position: fixed;
   width: 800px;
+  max-width: 100%;
   top: -50px;
   left: -50px;
-  right: -50px;
-  bottom: -50px;
+  transform: translate(-50%, -50%);
   padding: 2rem; 
   display: flex;
   align-items: center; 
