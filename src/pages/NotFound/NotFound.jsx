@@ -8,6 +8,7 @@ const NotFound = () => {
     let navigate = useNavigate();
     function handleClick() {
         navigate('/')
+        window.scrollTo(0, 0);
     }
     
     return (

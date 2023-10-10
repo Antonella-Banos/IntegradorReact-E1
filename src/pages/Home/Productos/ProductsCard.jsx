@@ -10,6 +10,7 @@ const ProductsCard = () => {
   let navigate = useNavigate();
   function handleClick() {
     navigate('/albumes')
+    window.scrollTo(0, 0);
   }
 
   const {destacados} = useSelector((state) => state.destacados)
@@ -20,7 +21,7 @@ const ProductsCard = () => {
          <ProductsContainer>
             {
               destacados.map((album) => {
-                return <AlbumCard key={album.id} {...album}/>
+                return < AlbumCard key={album.id} {...album}/>
               })
             } 
          </ProductsContainer>
