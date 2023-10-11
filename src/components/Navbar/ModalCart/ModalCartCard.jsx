@@ -6,11 +6,14 @@ import {BsPlusLg} from "react-icons/bs"
 import {AiOutlineMinus} from "react-icons/ai"
 import { useDispatch } from "react-redux";
 import { agregarAlCarrito, removerDelCarrito } from "../../../redux/carrito/carritoSlice";
+import { useState } from "react";
+import DeleteAlbumModal from "./../../Modals/DeleteAlbumModal"
 
 
 const ModalCartCard = ({img, title, release, price, category, quantity, id}) => {
 
   const dispatch = useDispatch();
+  const [isModalVisible, setModalVisible] = useState(false);
 
   return (
     <ProductContainerStyled>
@@ -24,9 +27,9 @@ const ModalCartCard = ({img, title, release, price, category, quantity, id}) => 
        </TextContainerStyled>
 
        <QuantityContainerStyled>
-         <CountButton 
+         < CountButton 
          button
-         onClick={() => dispatch(removerDelCarrito(id))}
+         onClick={() => {dispatch(removerDelCarrito(id)); setModalVisible(true);}}
          >
           <AiOutlineMinus style={{fontSize: "1.2rem"}}/>
          </CountButton>
@@ -39,6 +42,9 @@ const ModalCartCard = ({img, title, release, price, category, quantity, id}) => 
            <BsPlusLg style={{fontSize: "1.2rem"}}/>
          </CountButton>
        </QuantityContainerStyled>
+
+       {isModalVisible && <DeleteAlbumModal />}
+
     </ProductContainerStyled>
   );
 };

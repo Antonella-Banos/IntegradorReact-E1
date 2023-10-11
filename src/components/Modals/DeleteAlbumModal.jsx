@@ -2,7 +2,7 @@ import React from 'react';
 import { ConfirmationModalContainer, ModalButtonsContainer, ModalMessageText } from './Styles';
 import ModalButton from '../UI/ModalButton/ModalButton';
 
-const DeleteAlbumModal = () => {
+const DeleteAlbumModal = ({ onClose, onAccept }) => {
 
   return (
     <ConfirmationModalContainer>
@@ -12,11 +12,11 @@ const DeleteAlbumModal = () => {
        </ModalMessageText>
 
        <ModalButtonsContainer>
-           <ModalButton>
+           <ModalButton onClick={() => { onAccept(); onClose(); }}>
             Aceptar
            </ModalButton>
            
-           <ModalButton>
+           <ModalButton onClick={onClose}>
             Cancelar 
            </ModalButton>
        </ModalButtonsContainer>

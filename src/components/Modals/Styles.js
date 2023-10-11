@@ -6,22 +6,25 @@ export const ConfirmationModalContainer = styled.div`
   position: fixed;
   width: 800px;
   max-width: 100%;
-  top: -50px;
-  left: -50px;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   padding: 2rem; 
   display: flex;
   align-items: center; 
   justify-content: center;
+  flex-direction: column;
   border: 3px solid #ef94bd;
   background: #fff;
+  gap: 1rem;
 `;
 
 export const ModalMessageText = styled.h2`
-  color: #ef94bd;
   font-size: 1.2rem;
   font-family: 'Pathway Gothic One', sans-serif;
   text-align: center;
+  color: #ef94bd;
+  -webkit-text-fill-color: #ef94bd;
 `;
 
 export const ModalButtonsContainer = styled.div`

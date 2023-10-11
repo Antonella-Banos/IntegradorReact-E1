@@ -3,7 +3,7 @@ import { ConfirmationModalContainer, ModalButtonsContainer, ModalMessageText } f
 import ModalButton from '../UI/ModalButton/ModalButton';
 
 
-const AddToCartModal = () => {
+const AddToCartModal = ({ onConfirm, onCancel }) => {
 
   return (
     <ConfirmationModalContainer>
@@ -13,11 +13,11 @@ const AddToCartModal = () => {
        </ModalMessageText>
 
        <ModalButtonsContainer>
-           <ModalButton>
+           <ModalButton onClick={onConfirm}>
             Aceptar
            </ModalButton>
            
-           <ModalButton>
+           <ModalButton onClick={onCancel}>
             Cancelar 
            </ModalButton>
        </ModalButtonsContainer>
