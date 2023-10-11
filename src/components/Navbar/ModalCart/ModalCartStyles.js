@@ -64,10 +64,10 @@ export const ProductsWrapperStyled = styled.div`
   gap: 30px;
   width: 100%;
   height: 420px;
-  margin: 0 auto;
-  padding: 1rem;
-  padding-left: 0;
+  margin: 0 0 2rem 0;
+  padding: 0 0 8rem 0;
   overflow: scroll;
+  flex-wrap: wrap;
 
   &::-webkit-scrollbar {
     background: transparent;
@@ -91,13 +91,13 @@ export const ProductContainerStyled = styled.div`
   gap: 1.2rem;
   width: 370px;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.8rem;
   background: #7ca1d5;
   border: 2px solid #f7cac9;
 
   & img {
-    height: 80px;
-    width: 80px;
+    height: 75px;
+    width: 75px;
     object-fit: cover;
     border-radius: 0.5rem;
   }
