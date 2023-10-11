@@ -3,6 +3,8 @@ import { ContactForm, ContactCard, ContactFormButton, ContactFormContainer } fro
 import { Input } from '../../components/UI/Input/InputStyles'
 import { Textarea } from '../../components/UI/Textarea/TextareaStyles'
 import { Form, Formik } from 'formik'
+// import { contactoInitialValues } from '../../formik/initialValues'
+// import { contactoValidationSchema } from '../../formik/validationSchema'
 
 
 function Contacto() {
