@@ -15,6 +15,11 @@ const ModalCartCard = ({img, title, release, price, category, quantity, id}) => 
   const dispatch = useDispatch();
   const [isModalVisible, setModalVisible] = useState(false);
 
+  const handleRemoveFromCart = () => {
+    dispatch(removerDelCarrito(id));
+    setModalVisible(false);
+  };
+
   return (
     <ProductContainerStyled>
         <img 
@@ -28,8 +33,7 @@ const ModalCartCard = ({img, title, release, price, category, quantity, id}) => 
 
        <QuantityContainerStyled>
          < CountButton 
-         button
-         onClick={() => {dispatch(removerDelCarrito(id)); setModalVisible(true);}}
+         onClick={() => setModalVisible(true)}
          >
           <AiOutlineMinus style={{fontSize: "1.2rem"}}/>
          </CountButton>
@@ -43,7 +47,12 @@ const ModalCartCard = ({img, title, release, price, category, quantity, id}) => 
          </CountButton>
        </QuantityContainerStyled>
 
-       {isModalVisible && <DeleteAlbumModal />}
+       {isModalVisible && (
+        <DeleteAlbumModal
+          onAccept={handleRemoveFromCart}
+          onCancel={() => setModalVisible(false)}
+        />
+      )}
 
     </ProductContainerStyled>
   );

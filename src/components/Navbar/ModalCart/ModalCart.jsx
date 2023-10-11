@@ -7,10 +7,14 @@ import { CloseButtonStyled, ModalContainerStyled, Divider, MainProductContainer,
 import {AiOutlineClose} from "react-icons/ai"
 import {BiSolidTrashAlt} from "react-icons/bi"
 import { useDispatch, useSelector } from "react-redux"
+import FinishedOrderModal from "../../Modals/FinishedOrderModal"
+import { useState } from "react";
+
 
 const ModalCart = () => {
 
    const dispatch = useDispatch();
+   const [showFinishedOrderModal, setShowFinishedOrderModal] = useState(false);
 
    const {cartItems} = useSelector((state) => state.carrito)
 
@@ -19,6 +23,15 @@ const ModalCart = () => {
    const precioTotal = cartItems.reduce((acc, item) => {
       return (acc += item.price * item.quantity)
     }, 0);
+
+    const handleFinalizarCompra = () => {
+      setShowFinishedOrderModal(true);
+    };
+  
+    const handleCloseModals = () => {
+      setShowFinishedOrderModal(false);
+      dispatch(cartToggle());
+    };
 
    return (
     <>
@@ -75,8 +88,8 @@ const ModalCart = () => {
         </TotalPriceContainer>
 
         <Button 
-        radius='18'
-        onClick={() => dispatch(cartToggle())}
+        radius='18'  
+        onClick={handleFinalizarCompra}
         >Finalizar compra</Button>
 
         <Button
@@ -86,6 +99,10 @@ const ModalCart = () => {
         >
         <BiSolidTrashAlt/>
         </Button>
+
+        {showFinishedOrderModal && (
+              <FinishedOrderModal onClose={handleCloseModals} />
+        )}
         
      </ModalContainerStyled> 
      )}

@@ -3,7 +3,14 @@ import { ConfirmationModalContainer, ModalButtonsContainer, ModalMessageText } f
 import ModalButton from '../UI/ModalButton/ModalButton';
 
 
-const FinishedOrderModal = () => {
+const FinishedOrderModal = ({ onClose }) => {
+
+  const handleAccept = () => {
+    onClose();
+  };
+  const handleCancel = () => {
+    onClose();
+  }
 
   return (
     <ConfirmationModalContainer>
@@ -13,11 +20,11 @@ const FinishedOrderModal = () => {
     </ModalMessageText>
 
     <ModalButtonsContainer>
-        <ModalButton>
+        <ModalButton onClick={handleAccept}>
          Aceptar
         </ModalButton>
         
-        <ModalButton>
+        <ModalButton onClick={handleCancel}>
          Cancelar 
         </ModalButton>
     </ModalButtonsContainer>

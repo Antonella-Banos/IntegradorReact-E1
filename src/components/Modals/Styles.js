@@ -1,10 +1,9 @@
 import styled from "styled-components" 
 
-
 export const ConfirmationModalContainer = styled.div`
   z-index: 1000;
   position: fixed;
-  width: 800px;
+  width: 320px;
   max-width: 100%;
   top: 50%;
   left: 50%;
