@@ -35,7 +35,7 @@ export const NavbarContainerStyled = styled.nav`
 `;
 
 export const InvisibleScreen = styled.div`
-    z-index: 40;
+    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;

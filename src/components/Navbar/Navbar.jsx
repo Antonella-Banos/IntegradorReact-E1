@@ -48,8 +48,8 @@ const Navbar = () => {
 
             </UserYCartContainer>
 
-    </NavbarContainerStyled>
-    </NavbarWrapper>
+      </NavbarContainerStyled> 
+    </ NavbarWrapper>
   )
 }
 
