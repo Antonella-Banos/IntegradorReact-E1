@@ -1,6 +1,7 @@
 export const contactoInitialValues = {
-    nombre: '',
-    apellido: '',
-    email: '',
-    asunto: '',
+    nombre: "",
+    apellido: "",
+    email: "",
+    asunto: "",
+    as: "",
 }

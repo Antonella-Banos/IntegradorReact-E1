@@ -1,13 +1,11 @@
 import React from 'react'
-import { ContactForm, ContactCard, ContactFormButton, ContactFormContainer } from './ContactoStyles'
+import { ContactForm, ContactCard, FormButton, ContactFormContainer } from './ContactoStyles'
 import { Input } from '../../components/UI/Input/InputStyles'
 import { Textarea } from '../../components/UI/Textarea/TextareaStyles'
 import { Form, Formik } from 'formik'
-// import { contactoInitialValues } from '../../formik/initialValues'
-// import { contactoValidationSchema } from '../../formik/validationSchema'
 
 
-function Contacto() {
+const Contacto = () => {
     return (
         <ContactFormContainer>
             <ContactCard>
@@ -25,7 +23,7 @@ function Contacto() {
 
                 </ContactForm>
 
-                <ContactFormButton type='submit' radius='18'>Enviar</ContactFormButton>  
+                <FormButton type='submit' radius='18' whileTap={{scale: 0.90}}>Enviar</FormButton>  
                 </Form>
                 </Formik>
   

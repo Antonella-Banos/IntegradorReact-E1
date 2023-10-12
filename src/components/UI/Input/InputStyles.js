@@ -23,6 +23,7 @@ export const Input = styled.input`
   height: 35px;
   border-radius: 0.8rem;
   border: none;
+  border: 2.5px solid ${(props) => (props.isError ? "red" : "none")};
   outline: none;
   background: #fff;
   color: #444;
@@ -41,7 +42,7 @@ export const Input = styled.input`
 export const StyledErrorMessage = styled.p`
   margin: 0;
   margin-top: 5px;
-  color: #ef94bd;
+  color: red;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 15px;
   letter-spacing: 0.2px;
