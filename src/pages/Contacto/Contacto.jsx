@@ -1,8 +1,8 @@
 import React from 'react'
-import { ContactForm, ContactCard, FormButton, ContactFormContainer } from './ContactoStyles'
-import { Input } from '../../components/UI/Input/InputStyles'
-import { Textarea } from '../../components/UI/Textarea/TextareaStyles'
-import { Form, Formik } from 'formik'
+import { ContactForm, ContactCard, FormButton, ContactFormContainer, InputLabel, Input, StyledErrorMessage, InputContainer, Textarea } from './ContactoStyles'
+import { ErrorMessage, Field, Formik } from 'formik'
+import { contactoInitialValues } from '../../formik/initialValues'
+import { contactoValidationSchema } from '../../formik/validationSchema'
 
 
 const Contacto = () => {
@@ -11,20 +11,44 @@ const Contacto = () => {
             <ContactCard>
                 <img src="https://pbs.twimg.com/media/F3FBfaVWsAEP-hW?format=webp&name=small" alt="Seventeen" />
 
-                <Formik>
-                <Form>
-
+                <Formik 
+                initialValues={contactoInitialValues}
+                validationSchema={contactoValidationSchema} 
+                onSubmit={(values, { resetForm }) => {
+                    console.log(values);
+                    resetForm();
+                }}
+                > 
+                {({ errors, touched }) => (
                 <ContactForm>
+
+                  <InputContainer>
+                    <InputLabel> Nombre </InputLabel>
+                    <Field type="text" name="nombre" as={Input} isError={errors.nombre && touched.nombre} />
+                    <ErrorMessage name="nombre" component={StyledErrorMessage} />
+                  </InputContainer>
+
+                  <InputContainer>
+                    <InputLabel> Apellido </InputLabel>
+                    <Field type="text" name="apellido" as={Input} isError={errors.apellido && touched.apellido} />
+                    <ErrorMessage name="apellido" component={StyledErrorMessage} /> 
+                  </InputContainer>
                    
-                   <Input type='text' name='nombre' id='nombre' placeholder='Ingresar nombre'></Input>         
-                   <Input type='text' name='apellido' id='apellido' placeholder='Ingresar apellido'></Input>
-                   <Input type='email' name='email' id='email' placeholder='Ingresar email'></Input>
-                   <Textarea name='asunto' id='asunto' placeholder='Dejar un mensaje'></Textarea> 
+                  <InputContainer>
+                    <InputLabel> E-mail </InputLabel>
+                    <Field type="email" name="email" as={Input} isError={errors.email && touched.email} />
+                    <ErrorMessage name="email" component={StyledErrorMessage} />
+                  </InputContainer>
 
+                  <InputContainer>
+                    <InputLabel> Asunto </InputLabel>
+                    <Field name="asunto" as={Textarea} cols="25" rows="10" />
+                    <ErrorMessage name="asunto" component={StyledErrorMessage} />
+                  </InputContainer>
+
+                  <FormButton type='submit' radius='18' whileTap={{scale: 0.90}}> Enviar </FormButton> 
                 </ContactForm>
-
-                <FormButton type='submit' radius='18' whileTap={{scale: 0.90}}>Enviar</FormButton>  
-                </Form>
+                )}
                 </Formik>
   
             </ContactCard>

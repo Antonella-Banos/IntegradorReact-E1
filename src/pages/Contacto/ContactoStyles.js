@@ -37,8 +37,21 @@ export const ContactForm = styled(Form)`
     padding: 20px; 
 `;
 
+export const InputContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 3.5px;
+`;
+
+export const InputLabel = styled.label`
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    align-items: flex-start;
+`;
+
 export const Input = styled.input`
-    width: 100%;
+    width: 240px;
     height: 35px;
     border-radius: 0.8rem;
     border: none;
@@ -58,7 +71,7 @@ export const Input = styled.input`
 `;
 
 export const Textarea = styled.textarea`
-  width: 100%;
+  width: 240px;
   height: 35px;
   border-radius: 0.8rem;
   border: none;
@@ -103,7 +116,7 @@ export const FormButton = styled(motion.button)`
 
 export const StyledErrorMessage = styled.p`
   margin: 0;
-  margin-top: 5px;
+  margin-top: 2px;
   color: red;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 15px;

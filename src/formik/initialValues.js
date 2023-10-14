@@ -4,4 +4,4 @@ export const contactoInitialValues = {
     email: "",
     asunto: "",
     as: "",
-}
+};
