@@ -33,7 +33,7 @@ export const ContactForm = styled(Form)`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
     padding: 20px; 
 `;
 
@@ -45,7 +45,7 @@ export const InputContainer = styled.div`
 
 export const InputLabel = styled.label`
     font-family: 'Pathway Gothic One', sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     align-items: flex-start;
 `;
