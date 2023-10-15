@@ -3,7 +3,7 @@ import { ConfirmationModalContainer, ModalButtonsContainer, ModalMessageText } f
 import ModalButton from '../UI/ModalButton/ModalButton';
 
 
-  const SuccessfulDataModal = () => {
+  const SuccessfulDataModal = ({ closeModal }) => {
 
     return (
       <ConfirmationModalContainer>
@@ -13,7 +13,7 @@ import ModalButton from '../UI/ModalButton/ModalButton';
          </ModalMessageText>
 
          <ModalButtonsContainer>
-           <ModalButton>
+           <ModalButton onClick={closeModal}>
             Cerrar
            </ModalButton>
          </ModalButtonsContainer>

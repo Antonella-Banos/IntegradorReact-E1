@@ -1,11 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { ContactForm, ContactCard, FormButton, ContactFormContainer, InputLabel, Input, StyledErrorMessage, InputContainer, Textarea } from './ContactoStyles'
 import { ErrorMessage, Field, Formik } from 'formik'
 import { contactoInitialValues } from '../../formik/initialValues'
 import { contactoValidationSchema } from '../../formik/validationSchema'
+import SuccessfulDataModal from '../../components/SubmitModal/SubmitModal'
 
 
 const Contacto = () => {
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+    setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+    setIsModalOpen(false);
+    };
+
     return (
         <ContactFormContainer>
             <ContactCard>
@@ -17,6 +29,7 @@ const Contacto = () => {
                 onSubmit={(values, { resetForm }) => {
                     console.log(values);
                     resetForm();
+                    openModal();
                 }}
                 > 
                 {({ errors, touched }) => (
@@ -52,6 +65,8 @@ const Contacto = () => {
                 </Formik>
   
             </ContactCard>
+
+            {isModalOpen && <SuccessfulDataModal closeModal={closeModal} />} 
         </ContactFormContainer>
     )
 
