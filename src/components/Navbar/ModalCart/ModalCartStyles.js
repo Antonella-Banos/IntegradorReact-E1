@@ -20,6 +20,14 @@ export const ModalContainerStyled = styled(motion.div)`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media (max-width: 495px) {
+    width: 90%; 
+  }
+
+  @media (max-width: 370px) {
+    width: 90%;
+  }
 `;
 
 export const CloseButtonContainer = styled.div`
@@ -37,10 +45,18 @@ export const CloseButtonStyled = styled(motion.button)`
   color: #fff;
   cursor: pointer;
   align-items: center;
+ 
+  @media (max-width: 490px) {
+    margin-left: 1.5rem;
+  }
+
+  @media (max-width: 370px) {
+    margin-left: 2.3rem;
+  }
 `;
 
 export const MainTitleStyled = styled.div`
-  margin: 0 0 1.5rem 0;
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -50,37 +66,36 @@ export const MainTitleStyled = styled.div`
     color: #fff;
     font-family: 'Pathway Gothic One', sans-serif;
     font-weight: 400;
-  };
-`;
 
-export const MainProductContainer = styled.div`
-  height: 95px;
+    @media (max-width: 490px) {
+      margin-left: 1.5rem;
+    }
+
+    @media (max-width: 370px) {
+      margin-left: 2.3rem;
+    }
+  };
 `;
 
 export const ProductsWrapperStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
   width: 100%;
   height: 420px;
-  margin: 0 0 2rem 0;
-  padding: 0 0 8rem 0;
-  overflow: scroll;
+  margin: 0 auto;
+  padding: 0 0 0.8rem 0;
   flex-wrap: wrap;
-
-  &::-webkit-scrollbar {
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar:horizontal {
-    display: none;
-  }
 
   p {
     color: #fff;
     font-family: 'Pathway Gothic One', sans-serif;
     font-size: 1.5rem;
+
+    @media (max-width: 350px) {
+      margin-left: 1.3rem;
+    }
   }
 `;
 
@@ -101,6 +116,16 @@ export const ProductContainerStyled = styled.div`
     object-fit: cover;
     border-radius: 0.5rem;
   }
+
+  @media (max-width: 490px) {
+    width: 230px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media (max-width: 370px) {
+    margin-left: 1.5rem;
+  }
 `;
 
 export const TextContainerStyled = styled.div`
@@ -108,6 +133,11 @@ export const TextContainerStyled = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  @media (max-width: 490px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const AlbumTitleStyled = styled.h3`
@@ -137,7 +167,20 @@ export const QuantityContainerStyled = styled.div`
 export const Divider = styled.hr`
   border: 0.3px solid #fff;
   width: 100%;
-  margin-top: 13rem;
+  margin-top: 3rem;
+
+  @media (max-width: 490px) {
+    width: 85%;
+  }
+
+  @media (max-width: 370px) {
+    width: 70%;
+    margin-left: 3.8rem;
+  }
+
+  @media (max-width: 325px) {
+    margin-left: 3.5rem;
+  }
 `;
 
 export const TotalPriceContainer = styled.div`
@@ -150,6 +193,14 @@ export const TotalPriceContainer = styled.div`
     font-size: 1.5rem;
     font-weight: 400;
     color: #fff;
+
+    @media (max-width: 490px) {
+      margin-left: 1.5rem;
+    }
+
+    @media (max-width: 370px) {
+      margin-left: 2.3rem;
+    }
   }
 
   & span {
@@ -158,5 +209,28 @@ export const TotalPriceContainer = styled.div`
     font-weight: 400;
     color: #fff;
     margin-top: 1.5rem;
+
+    @media (max-width: 490px) {
+      margin-right: 1.5rem;
+    }
+
+    @media (max-width: 325px) {
+      margin-left: 2.2rem;
+    }
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 25px;
+ 
+  @media (max-width: 490px) {
+    margin-left: 1.5rem;
+  }
+
+  @media (max-width: 370px) {
+    margin-left: 2.3rem;
   }
 `;

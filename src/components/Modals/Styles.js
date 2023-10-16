@@ -16,6 +16,12 @@ export const ConfirmationModalContainer = styled.div`
   border: 3px solid #ef94bd;
   background: #fff;
   gap: 1rem;
+
+  @media (max-width: 415px) {
+    width: 245px;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+  }
 `;
 
 export const ModalMessageText = styled.h2`
@@ -24,10 +30,15 @@ export const ModalMessageText = styled.h2`
   text-align: center;
   color: #ef94bd;
   -webkit-text-fill-color: #ef94bd;
+  flex-wrap: wrap;
 `;
 
 export const ModalButtonsContainer = styled.div`
   display: flex;
   justify-content: center;
   gap: 2rem;
+
+  @media (max-width: 415px) {
+    flex-direction: column;
+  }
 `;

@@ -3,7 +3,7 @@ import { cartToggle, vaciarCarrito } from "../../../redux/carrito/carritoSlice";
 import Button from "../../UI/Button/Button";
 import { InvisibleScreen } from "../NavbarStyles";
 import ModalCartCard from "./ModalCartCard";
-import { CloseButtonStyled, ModalContainerStyled, Divider, MainProductContainer, ProductsWrapperStyled, TotalPriceContainer, CloseButtonContainer, MainTitleStyled } from "./ModalCartStyles";
+import { CloseButtonStyled, ModalContainerStyled, Divider, ProductsWrapperStyled, TotalPriceContainer, CloseButtonContainer, MainTitleStyled, ButtonContainer } from "./ModalCartStyles";
 import {AiOutlineClose} from "react-icons/ai"
 import {BiSolidTrashAlt} from "react-icons/bi"
 import { useDispatch, useSelector } from "react-redux"
@@ -61,7 +61,6 @@ const ModalCart = () => {
           </CloseButtonStyled>
         </CloseButtonContainer>
 
-        <MainProductContainer>
           
           <MainTitleStyled>
             <h2>Tus álbumes</h2>
@@ -79,7 +78,6 @@ const ModalCart = () => {
             }
             
           </ProductsWrapperStyled>
-        </MainProductContainer>
 
         <Divider/>
         <TotalPriceContainer>
@@ -87,7 +85,9 @@ const ModalCart = () => {
           <span>${precioTotal}</span>
         </TotalPriceContainer>
 
-        <Button 
+        <ButtonContainer>
+
+         <Button 
         radius='18'  
         onClick={handleFinalizarCompra}
         >Finalizar compra</Button>
@@ -98,7 +98,10 @@ const ModalCart = () => {
         disabled={!cartItems.length}
         >
         <BiSolidTrashAlt/>
-        </Button>
+        </Button> 
+        </ButtonContainer>
+
+        
 
         {showFinishedOrderModal && (
               <FinishedOrderModal onClose={handleCloseModals} />
